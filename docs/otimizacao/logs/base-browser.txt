@@ -1,0 +1,13 @@
+{
+  ms: 40671.20000000298,
+  fps: 2,
+  physicsHz: 180,
+  physicsSteps: 972,
+  physicsDroppedSeconds: 26.166666666666668,
+  calls: 1280,
+  triangles: 1682029,
+  camera: 'chase',
+  track: 'interlagos',
+  near: 0.35,
+  fov: 60.00005676940836
+}

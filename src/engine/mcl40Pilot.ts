@@ -1,6 +1,6 @@
 import {teams2026} from '../sim/grid2026';
 import * as THREE from 'three';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {createModelLoader} from './modelLoader';
 import type {F1CarVisual} from './carBuilder';
 import {inspectPilot} from './blenderPilot';
 import {VEHICLE_STUDIES, type VehicleStudy} from '../sim/vehicleStudies';
@@ -127,13 +127,13 @@ export function adaptMcl40(scene: THREE.Group, base: F1CarVisual, study:VehicleS
 }
 
 export async function loadStudyPilot(base: F1CarVisual, study:VehicleStudy): Promise<F1CarVisual> {
-  const gltf = await new GLTFLoader().loadAsync(`${import.meta.env.BASE_URL}models/${study.file}`);
+  const gltf = await createModelLoader().loadAsync(`${import.meta.env.BASE_URL}models/${study.file}`);
   try {
     const visual = adaptMcl40(gltf.scene,base,study);
     const aston = study.id === 'amr26';
     const papaya = study.id === 'mcl40';
     const {loadRB22Template} = await import('./rb22Donor.js');
-    const donor = papaya ? (await new GLTFLoader().loadAsync(import.meta.env.BASE_URL+'models/mcl-papaya-shell.glb')).scene : await loadRB22Template();
+    const donor = papaya ? (await createModelLoader().loadAsync(import.meta.env.BASE_URL+'models/mcl-papaya-shell.glb')).scene : await loadRB22Template();
     if(papaya)(await import('./papayaLivery')).addPapayaLivery(donor);
     if(!papaya && study.id !== 'rb22'){
       const paint = aston ? 0x006c55 : study.id === 'sf26' ? 0xda151f : visual.paintMat.color.getHex();

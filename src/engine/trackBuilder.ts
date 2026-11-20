@@ -1,4 +1,4 @@
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {createModelLoader} from './modelLoader';
 import {buildInterlagosFences} from './interlagosFences';
 import {attachStandPreview} from './interlagosStandPreview';
 import {teams2026} from '../sim/grid2026';
@@ -1138,7 +1138,7 @@ export function buildInterlagosScene(
   if (track.surveyed) {
     let closed = false;
     disposables.push({dispose:()=>{closed=true;}});
-    void new GLTFLoader().loadAsync(import.meta.env.BASE_URL+'models/s1-shrub.glb').then(({scene})=>{
+    void createModelLoader().loadAsync(import.meta.env.BASE_URL+'models/s1-shrub.glb').then(({scene})=>{
       const shrub=scene.getObjectByName('Shrub') as THREE.Mesh;
       const material=shrub.material as THREE.MeshStandardMaterial;
       const textures=new Set(Object.values(material).filter((v):v is THREE.Texture=>v instanceof THREE.Texture));

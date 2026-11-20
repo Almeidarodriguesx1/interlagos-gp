@@ -8,13 +8,26 @@ import {VEHICLE_STUDIES,studyFromQuery} from '../sim/vehicleStudies';
 import {PIT_EQUIPMENT_LAYOUT} from './pitEquipment';
 import type {RaceConfig} from '../sim/types';
 const config:RaceConfig={totalLaps:3,weather:'dry',absEnabled:true,tcEnabled:true,racingLineEnabled:true};
+import {MeshoptDecoder} from 'meshoptimizer';
+await MeshoptDecoder.ready;
 function asset(file:string){
  const bytes=readFileSync(new URL('../../public/models/'+file,import.meta.url));assert.equal(bytes.readUInt32LE(8),bytes.length);
  const length=bytes.readUInt32LE(12),doc=JSON.parse(bytes.subarray(20,20+length).toString()),bin=bytes.subarray(28+length);const parents=new Map<number,number>();doc.nodes.forEach((n:any,i:number)=>(n.children??[]).forEach((c:number)=>parents.set(c,i)));
+ const views = new Map<number, Buffer>();
+ function view(index:number):Buffer {
+   const cached=views.get(index);
+   if(cached)return cached;
+   const v=doc.bufferViews[index], e=v.extensions?.EXT_meshopt_compression;
+   if(!e)return bin.subarray(v.byteOffset??0);
+   const decoded=Buffer.alloc(e.count*e.byteStride);
+   MeshoptDecoder.decodeGltfBuffer(decoded,e.count,e.byteStride,bin.subarray(e.byteOffset??0,(e.byteOffset??0)+e.byteLength),e.mode,e.filter);
+   views.set(index,decoded);
+   return decoded;
+ }
  function world(i:number):Matrix4 {const n=doc.nodes[i];const local=n.matrix?new Matrix4().fromArray(n.matrix):new Matrix4().compose(new Vector3().fromArray(n.translation??[0,0,0]),new Quaternion().fromArray(n.rotation??[0,0,0,1]),new Vector3().fromArray(n.scale??[1,1,1]));return parents.has(i)?world(parents.get(i)!).multiply(local):local;}
  const index=(name:string)=>{const i=doc.nodes.findIndex((n:any)=>n.name===name);assert.ok(i>=0,'Missing '+name);return i;};
  const position=(name:string)=>new Vector3().setFromMatrixPosition(world(index(name)));
- function positions(i:number):Vector3[]{const n=doc.nodes[i],m=world(i),result:Vector3[]=[];if(n.mesh!==undefined)for(const p of doc.meshes[n.mesh].primitives){const a=doc.accessors[p.attributes.POSITION],v=doc.bufferViews[a.bufferView];assert.equal(a.componentType,5126);for(let j=0;j<a.count;j++){const offset=(v.byteOffset??0)+(a.byteOffset??0)+j*(v.byteStride??12);result.push(new Vector3(bin.readFloatLE(offset),bin.readFloatLE(offset+4),bin.readFloatLE(offset+8)).applyMatrix4(m));}}for(const c of n.children??[])result.push(...positions(c));return result;}
+ function positions(i:number):Vector3[]{const n=doc.nodes[i],m=world(i),result:Vector3[]=[];if(n.mesh!==undefined)for(const p of doc.meshes[n.mesh].primitives){const a=doc.accessors[p.attributes.POSITION],v=doc.bufferViews[a.bufferView];assert.equal(a.componentType,5126);for(let j=0;j<a.count;j++){const data=view(a.bufferView);const offset=(a.byteOffset??0)+j*(v.byteStride??12);result.push(new Vector3(data.readFloatLE(offset),data.readFloatLE(offset+4),data.readFloatLE(offset+8)).applyMatrix4(m));}}for(const c of n.children??[])result.push(...positions(c));return result;}
  return {doc,position,index,world,positions};
 }
 test('every study preserves player-only geometry, HUD identity, unique grid numbers and restart settings',()=>{

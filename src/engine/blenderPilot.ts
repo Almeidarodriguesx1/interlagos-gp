@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {createModelLoader} from './modelLoader';
 import type {F1CarVisual} from './carBuilder';
 
 export const PILOT_NODES=['Body','Wheel_FL','Wheel_FR','Wheel_RL','Wheel_RR','FrontWing','RearWing','RearFlap','SteeringWheel','Helmet','Visor','CockpitAnchor','TcamAnchor','OLED','Number_Nose'] as const;
@@ -55,7 +55,7 @@ export function adaptBlenderPilot(scene:THREE.Group,base:F1CarVisual):F1CarVisua
  };
 }
 export async function loadBlenderPilot(base:F1CarVisual):Promise<F1CarVisual>{
- const gltf=await new GLTFLoader().loadAsync(`${import.meta.env.BASE_URL}models/pilot-v8.glb`);
+ const gltf=await createModelLoader().loadAsync(`${import.meta.env.BASE_URL}models/pilot-v8.glb`);
  const geometries=new Set<THREE.BufferGeometry>(),materials=new Set<THREE.Material>(),textures=new Set<THREE.Texture>();
  gltf.scene.traverse(o=>{if(o instanceof THREE.Mesh){geometries.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:[o.material]){materials.add(m);for(const v of Object.values(m))if(v instanceof THREE.Texture)textures.add(v);}}});
  try{return adaptBlenderPilot(gltf.scene,base);}catch(error){

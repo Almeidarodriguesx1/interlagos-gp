@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {createModelLoader} from './modelLoader';
 /** Estimated decorative garage apron layout, entirely inside the existing pit foundation.
  * Coordinates are local to pit-complex; floor top = pitGround+.1, root = pitGround+1.5.
  */
@@ -22,7 +22,7 @@ export function attachPitEquipment(pit:THREE.Group):()=>void {
   }
   const release=()=>{for(const r of resources)r.dispose();resources.clear();};
   const dispose=()=>{if(disposed)return;disposed=true;group.removeFromParent();group.clear();release();};
-  void new GLTFLoader().loadAsync(`${import.meta.env.BASE_URL}models/pit-kit-v01.glb`).then(gltf=>{
+  void createModelLoader().loadAsync(`${import.meta.env.BASE_URL}models/pit-kit-v01.glb`).then(gltf=>{
     collect(gltf.scene);
     if(disposed){release();return;}
     try {

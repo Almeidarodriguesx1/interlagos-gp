@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import {createModelLoader} from './modelLoader';
 import type { CarState } from '../sim/types';
 
 const distances = [0, 32, 75];
@@ -47,7 +47,7 @@ export class RivalLodGrid {
   handles(slot: number) { return this.root.visible && !!this.teams[slot]; }
 
   static async load(teams: (string | undefined)[]) {
-    const loader = new GLTFLoader();
+    const loader = createModelLoader();
     const templates: THREE.Group[] = [];
     try {
       const banks = new Map<string, THREE.Group[]>();

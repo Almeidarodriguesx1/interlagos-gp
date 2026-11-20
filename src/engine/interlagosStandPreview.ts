@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import {createModelLoader} from './modelLoader';
 
 export function attachStandPreview(stand: THREE.Group, length: number, sector: 'a' | 'd'): () => void {
   const original = stand.children.slice(3).filter(object => object.name !== 'seated-spectators');
@@ -14,7 +14,7 @@ export function attachStandPreview(stand: THREE.Group, length: number, sector: '
   };
 
   const file = `${import.meta.env.BASE_URL}models/interlagos-trecho1-setor-${sector}.glb`;
-  void new GLTFLoader().loadAsync(file).then(({scene}) => {
+  void createModelLoader().loadAsync(file).then(({scene}) => {
     scene.traverse(node => {
       if (!(node instanceof THREE.Mesh)) return;
       geometries.add(node.geometry);
