@@ -9,6 +9,7 @@ export function attachStandPreview(stand: THREE.Group, length: number, sector: '
   const geometries = new Set<THREE.BufferGeometry>();
   const disposeResources = () => {
     model?.removeFromParent();
+    model?.traverse(node => { if (node instanceof THREE.InstancedMesh) node.dispose(); });
     for (const material of materials) material.dispose();
     for (const geometry of geometries) geometry.dispose();
   };
@@ -33,13 +34,22 @@ export function attachStandPreview(stand: THREE.Group, length: number, sector: '
     const span = length / count;
     model = new THREE.Group();
     model.name = 'Interlagos Blender ' + sector.toUpperCase();
-    for (let i = 0; i < count; i++) {
-      const bay = scene.clone();
-      bay.scale.set(14 / size.x, 10 / size.y, (span - .24) / size.z);
-      bay.position.set(-1.8 - center.x * bay.scale.x, 1 - bounds.min.y * bay.scale.y,
-        -length / 2 + (i + .5) * span - center.z * bay.scale.z);
-      model.add(bay);
-    }
+    scene.updateMatrixWorld(true);
+    const placement = new THREE.Object3D();
+    placement.scale.set(14 / size.x, 10 / size.y, (span - .24) / size.z);
+    const matrix = new THREE.Matrix4();
+    scene.traverse(mesh => {
+      if (!(mesh instanceof THREE.Mesh)) return;
+      const bays = new THREE.InstancedMesh(mesh.geometry, mesh.material, count);
+      bays.castShadow = bays.receiveShadow = true;
+      for (let i = 0; i < count; i++) {
+        placement.position.set(-1.8 - center.x * placement.scale.x, 1 - bounds.min.y * placement.scale.y,
+          -length / 2 + (i + .5) * span - center.z * placement.scale.z);
+        placement.updateMatrix();
+        bays.setMatrixAt(i, matrix.multiplyMatrices(placement.matrix, mesh.matrixWorld));
+      }
+      model!.add(bays);
+    });
     stand.add(model);
     for (const object of original) object.visible = false;
   }).catch(error => {
