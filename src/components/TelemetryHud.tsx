@@ -1,5 +1,5 @@
 import { Camera, Gamepad2, Pause, Volume2, VolumeX } from 'lucide-react';
-import { TRACK_LIST, type TrackData } from '../sim/track';
+import { getTrack, type TrackData } from '../sim/track';
 import type { CameraMode, TelemetrySnapshot, TrackId } from '../sim/types';
 import { formatGap, formatLapTime } from '../utils/formatTime';
 
@@ -50,13 +50,7 @@ function buildMinimapGeometry(track: TrackData): MinimapGeometry {
   };
 }
 
-const MINIMAPS: Record<TrackId, MinimapGeometry> = (() => {
-  const map = {} as Record<TrackId, MinimapGeometry>;
-  for (const t of TRACK_LIST) {
-    map[t.id] = buildMinimapGeometry(t);
-  }
-  return map;
-})();
+const minimaps: Partial<Record<TrackId, MinimapGeometry>> = {};
 
 function formatDelta(delta: number | null): string {
   if (delta === null || !Number.isFinite(delta)) return '--.---';
@@ -88,7 +82,7 @@ export function TelemetryHud({
     gamepadConnected,
   } = telemetry;
 
-  const minimap = MINIMAPS[trackId] ?? MINIMAPS.interlagos;
+  const minimap = minimaps[trackId] ??= buildMinimapGeometry(getTrack(trackId));
   const rpmRatio = Math.max(0, Math.min(1, (player.rpm - 4500) / (player.maxRpm - 4500)));
   const totalLeds = 15;
   const activeLeds = Math.round(rpmRatio * totalLeds);

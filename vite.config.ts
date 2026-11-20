@@ -6,9 +6,15 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
+    build: {
+      rolldownOptions: {output: {codeSplitting: {groups: [
+        {name:'three', test:/node_modules\/three\/build/},
+        {name:'ui', test:/node_modules\/(react|react-dom|scheduler)\//},
+      ]}}},
+    },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname, '.'),
       },
     },
     server: {

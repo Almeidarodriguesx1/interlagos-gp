@@ -912,19 +912,28 @@ export function buildSurveyedInterlagos() {
 }
 export const surveyedInterlagos = typeof window !== 'undefined'
   && new URLSearchParams(window.location.search).get('interlagos') !== 'legacy';
-export const TRACKS: Record<TrackId, TrackData> = {
-  interlagos: surveyedInterlagos ? buildSurveyedInterlagos() : buildTrackFromBlueprint(TRACK_BLUEPRINTS.interlagos),
-  monza: buildTrackFromBlueprint(TRACK_BLUEPRINTS.monza),
-  spa: buildTrackFromBlueprint(TRACK_BLUEPRINTS.spa),
-};
-
-export const TRACK_LIST: TrackData[] = [TRACKS.interlagos, TRACKS.monza, TRACKS.spa];
-
-export const INTERLAGOS_TRACK = TRACKS.interlagos;
-
+export const TRACK_MENU = Object.values(TRACK_BLUEPRINTS).map(b => b.meta);
+const cachedTracks = new Map<TrackId, TrackData>();
 export function getTrack(trackId: TrackId = 'interlagos'): TrackData {
-  return TRACKS[trackId] ?? TRACKS.interlagos;
+  const blueprint = TRACK_BLUEPRINTS[trackId] ?? TRACK_BLUEPRINTS.interlagos;
+  let track = cachedTracks.get(blueprint.meta.id);
+  if (!track) {
+    track = buildTrackFromBlueprint(blueprint, blueprint.meta.id === 'interlagos' && surveyedInterlagos);
+    cachedTracks.set(blueprint.meta.id, track);
+  }
+  return track;
 }
+export const INTERLAGOS_TRACK = getTrack();
+export const TRACKS = {
+  get interlagos() {return INTERLAGOS_TRACK;},
+  get monza() {return getTrack('monza');},
+  get spa() {return getTrack('spa');},
+};
+// Preserve indexed access and iteration for the geometry checks without building unused circuits.
+export const TRACK_LIST: TrackData[] = [];
+TRACK_MENU.forEach((meta,index) => Object.defineProperty(TRACK_LIST,index,{
+  enumerable:true, get:() => getTrack(meta.id),
+}));
 
 export function getSampleAtDistance(s: number, track: TrackData = INTERLAGOS_TRACK): TrackSample {
   const wrapped = ((s % track.totalLength) + track.totalLength) % track.totalLength;

@@ -3,7 +3,7 @@ import {VEHICLE_STUDIES, studyFromQuery} from '../sim/vehicleStudies';
 import { gridRoster } from '../sim/grid2026';
 import { Gamepad2 } from 'lucide-react';
 import { PLAYER_TEAMS, getPlayerTeamPreset } from '../sim/raceDirector';
-import { TRACK_LIST, getTrack, type TrackData } from '../sim/track';
+import { TRACK_MENU, getTrack, type TrackData } from '../sim/track';
 import type { DifficultyLevel, RaceConfig, RaceMode, TrackId, WeatherCondition } from '../sim/types';
 import { formatLapTime } from '../utils/formatTime';
 
@@ -126,7 +126,7 @@ export function TitleOverlay({
             <div className="flex items-center justify-between gap-3">
               <span className="text-xs font-medium text-slate-300 shrink-0">Circuito</span>
               <div className="flex items-center gap-1 p-1 bg-[#161a23] rounded-md">
-                {TRACK_LIST.map((t) => (
+                {TRACK_MENU.map((t) => (
                   <button
                     key={t.id}
                     type="button"
@@ -138,7 +138,7 @@ export function TitleOverlay({
                         : 'text-slate-300 hover:text-white'
                     }`}
                   >
-                    {t.meta.shortName}
+                    {t.shortName}
                   </button>
                 ))}
               </div>
