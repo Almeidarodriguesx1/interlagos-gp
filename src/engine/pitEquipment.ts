@@ -13,7 +13,7 @@ export const PIT_EQUIPMENT_LAYOUT = teams2026.flatMap((team,index)=>{
   {asset:'Pit_RearJack',x:-8.4,y:-1.4,z:bay+3.4},
 ].map(item=>({...item,team:team.name}));
 });
-export function attachPitEquipment(pit:THREE.Group):()=>void {
+export function attachPitEquipment(pit:THREE.Group, manager?: THREE.LoadingManager):()=>void {
   const group=new THREE.Group();group.name='pit-equipment';pit.add(group);
   let disposed=false;
   const resources=new Set<{dispose:()=>void}>();
@@ -22,7 +22,7 @@ export function attachPitEquipment(pit:THREE.Group):()=>void {
   }
   const release=()=>{for(const r of resources)r.dispose();resources.clear();};
   const dispose=()=>{if(disposed)return;disposed=true;group.removeFromParent();group.clear();release();};
-  void createModelLoader().loadAsync(`${import.meta.env.BASE_URL}models/pit-kit-v01.glb`).then(gltf=>{
+  void createModelLoader(manager).loadAsync(`${import.meta.env.BASE_URL}models/pit-kit-v01.glb`).then(gltf=>{
     collect(gltf.scene);
     if(disposed){release();return;}
     try {

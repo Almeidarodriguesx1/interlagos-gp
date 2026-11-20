@@ -227,6 +227,7 @@ export interface TelemetrySnapshot {
   trackName: string;
   mode: RaceMode;
   difficulty: DifficultyLevel;
+  loadingProgress?: number;
   preparingGrid?: boolean;
   countdownLights: number; // 0..5 during countdown
   countdownGoFlash: boolean;

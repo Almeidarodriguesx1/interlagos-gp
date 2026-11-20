@@ -19,6 +19,7 @@ import type { WeatherCondition } from '../sim/types';
 import type { ProceduralTextures } from './textures';
 
 export interface InterlagosEnvironment {
+  ready: Promise<void>;
   group: THREE.Group;
   asphaltMaterial: THREE.MeshStandardMaterial;
   gantryLights: THREE.Mesh[];
@@ -509,6 +510,8 @@ export function buildInterlagosScene(
   textures: ProceduralTextures,
   track: InterlagosTrack = INTERLAGOS_TRACK,
 ): InterlagosEnvironment {
+  const manager = new THREE.LoadingManager();
+  const ready = new Promise<void>(resolve => { manager.onLoad = resolve; });
   const group = new THREE.Group();
   const disposables: Array<{ dispose: () => void }> = [];
 
@@ -524,7 +527,7 @@ export function buildInterlagosScene(
   }
 
   const boxTexture = (file:string) => {
-    const map = new THREE.TextureLoader().load(import.meta.env.BASE_URL+'textures/boxes/'+file+'.webp');
+    const map = new THREE.TextureLoader(manager).load(import.meta.env.BASE_URL+'textures/boxes/'+file+'.webp');
     map.colorSpace=THREE.SRGBColorSpace;
     map.wrapS=map.wrapT=THREE.RepeatWrapping;
     map.anisotropy=4;
@@ -681,7 +684,7 @@ export function buildInterlagosScene(
       );
   };
   if (track.id === 'interlagos') {
-    const loader = new THREE.TextureLoader();
+    const loader = new THREE.TextureLoader(manager);
     const load = (kind: string, color = false) => {
       const path = `${import.meta.env.BASE_URL}textures/interlagos-trecho1/asphalt_track_${kind}_1k.jpg`;
       const texture = loader.load(path);
@@ -1075,7 +1078,7 @@ export function buildInterlagosScene(
   towerTop.position.set(-3.5, 21.5, 78);
   pitGroup.add(towerTop);
   group.add(pitGroup);
-  const disposePitEquipment=attachPitEquipment(pitGroup);
+  const disposePitEquipment=attachPitEquipment(pitGroup, manager);
 
   const colGeo = new THREE.BoxGeometry(.55,12.6,.55);disposables.push(colGeo);
   const crowdSources: THREE.Vector3[] = [];
@@ -1131,14 +1134,14 @@ export function buildInterlagosScene(
     group.add(sg);
     if (track.id === 'interlagos') crowdSources.push(new THREE.Vector3(st.x, foundationTop + 5, st.z));
     if (track.id === 'interlagos' && standIndex < 2) {
-      disposables.push({dispose: attachStandPreview(sg, standLength, standIndex === 0 ? 'a' : 'd')});
+      disposables.push({dispose: attachStandPreview(sg, standLength, standIndex === 0 ? 'a' : 'd', manager)});
     }
   }
 
   if (track.surveyed) {
     let closed = false;
     disposables.push({dispose:()=>{closed=true;}});
-    void createModelLoader().loadAsync(import.meta.env.BASE_URL+'models/s1-shrub.glb').then(({scene})=>{
+    void createModelLoader(manager).loadAsync(import.meta.env.BASE_URL+'models/s1-shrub.glb').then(({scene})=>{
       const shrub=scene.getObjectByName('Shrub') as THREE.Mesh;
       const material=shrub.material as THREE.MeshStandardMaterial;
       const textures=new Set(Object.values(material).filter((v):v is THREE.Texture=>v instanceof THREE.Texture));
@@ -1322,6 +1325,7 @@ export function buildInterlagosScene(
   };
 
   return {
+    ready,
     group,
     asphaltMaterial,
     gantryLights,

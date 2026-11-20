@@ -323,7 +323,7 @@ export default function App() {
 
       {!webglError && (!telemetry || telemetry.preparingGrid) && (
         <div role="status" className="session-loader">
-          <div><span className="loader-track" /><h2>{telemetry ? 'Preparando o grid' : 'Carregando o circuito'}</h2></div>
+          <div><span className="loader-track" /><h2>{telemetry ? 'Preparando o grid' : 'Carregando o circuito'}</h2><progress aria-label="Preparação da sessão" max={1} value={telemetry?.loadingProgress} /></div>
         </div>
       )}
       {telemetry && phase === 'title' && (

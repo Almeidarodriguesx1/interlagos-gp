@@ -159,6 +159,7 @@ export class F1EngineController {
   private textures: ProceduralTextures;
   private env: InterlagosEnvironment;
   private modelsSettled = false;
+  private preparedStages = 0;
   private gridHoldUntil = 0;
   private rivalGrid?: RivalLodGrid;
   private gridError?: string;
@@ -638,8 +639,8 @@ export class F1EngineController {
       (window as any).interlagosPilot={ready:true,source:this.vehicleStudy?.label ?? 'Blender',inspection:visual.root.userData.inspection};
     }).catch(error=>{if(!this.disposed){console.error('[Blender pilot]',error);(window as any).interlagosPilot={ready:false,error:String(error)};}});
 
-    void Promise.all([gridLoad, pilotLoad]).then(async () => {
-      if (!this.disposed && !this.isSoftwareGl) await this.renderer.compileAsync(this.scene, this.camera);
+    void Promise.all([gridLoad, pilotLoad, this.env.ready].map(task => task.then(() => { this.preparedStages++; }))).then(async () => {
+      if (!this.disposed) await this.renderer.compileAsync(this.scene, this.camera);
     }).catch(error => console.warn('Pré-carregamento de shaders', error))
       .finally(() => { this.modelsSettled = true; });
     this.applyWeatherAtmosphere(initialConfig.weather);
@@ -1955,6 +1956,7 @@ export class F1EngineController {
     if (!force && now - this.lastHudPushMs < 80) return; // <= 12.5 Hz HUD updates
     this.lastHudPushMs = now;
     const snapshot = buildTelemetrySnapshot(this.session, this.lastInputs);
+    snapshot.loadingProgress = this.modelsSettled ? 1 : this.preparedStages / 4;
     snapshot.preparingGrid = this.session.phase === 'countdown' && (!this.modelsSettled || now < this.gridHoldUntil);
     this.onTelemetry(snapshot);
   }
