@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {gzipSync} from 'node:zlib';
+const html = readFileSync('dist/index.html','utf8');
+const files = new Set([...html.matchAll(/(?:src|href)="([^"]+\.js)"/g)].map(match=>match[1]));
+assert.ok(files.size,'Nenhuma entrada JavaScript no HTML');
+let total = 0;
+for (const file of files) total += gzipSync(readFileSync('dist/'+file)).length;
+console.log('Entrada e módulos pré-carregados, bytes gzip:',total);
+assert.ok(total < 500000,'Orçamento inicial excedido');

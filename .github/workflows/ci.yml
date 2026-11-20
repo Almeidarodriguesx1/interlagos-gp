@@ -1,0 +1,21 @@
+name: Verificar simulador
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.16.0'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - run: node scripts/check-bundle.mjs
+      - run: npm run check:geom
+      - run: npm run check:scenery
+      - run: npm run verify:models
