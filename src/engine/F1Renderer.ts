@@ -171,7 +171,7 @@ export class F1EngineController {
   private sky: Sky;
   private sunLight: THREE.DirectionalLight;
   private hemiLight: THREE.HemisphereLight;
-  private pmremTex: THREE.Texture | null = null;
+  private environmentTarget: THREE.WebGLRenderTarget | null = null;
   private activeHdriWeather: WeatherCondition | null = null;
 
   // Pooled particle ring buffer (spray / tire smoke / off-track dust)
@@ -307,9 +307,9 @@ export class F1EngineController {
     this.scene.background = new THREE.Color(0x9bc4e2);
     this.scene.fog = new THREE.FogExp2(0xaecce0, 0.00022);
 
-    this.pmremTex = createProceduralHdri(this.renderer, initialConfig.weather);
+    this.environmentTarget = createProceduralHdri(this.renderer, initialConfig.weather);
     this.activeHdriWeather = initialConfig.weather;
-    this.scene.environment = this.pmremTex;
+    this.scene.environment = this.environmentTarget.texture;
     this.scene.environmentIntensity = initialConfig.weather === 'wet' ? 0.62 : 0.42;
 
     this.camera = new THREE.PerspectiveCamera(62, w / h, 0.15, 2400);
@@ -806,9 +806,9 @@ export class F1EngineController {
     this.env.setWeatherVisuals(weather);
     if (this.activeHdriWeather !== weather) {
       const nextHdri = createProceduralHdri(this.renderer, weather);
-      this.scene.environment = nextHdri;
-      this.pmremTex?.dispose();
-      this.pmremTex = nextHdri;
+      this.scene.environment = nextHdri.texture;
+      this.environmentTarget?.dispose();
+      this.environmentTarget = nextHdri;
       this.activeHdriWeather = weather;
     }
     if (this.rainMesh) {
@@ -2150,7 +2150,7 @@ export class F1EngineController {
     this.audio.dispose();
     this.textures.dispose();
     this.env.dispose();
-    this.pmremTex?.dispose();
+    this.environmentTarget?.dispose();
     this.rivalGrid?.dispose();
     for (const vis of this.carVisuals) vis.dispose();
     this.ghostVisual.dispose();

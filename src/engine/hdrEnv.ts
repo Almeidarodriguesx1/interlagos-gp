@@ -9,7 +9,7 @@ import type { WeatherCondition } from '../sim/types';
 export function createProceduralHdri(
   renderer: THREE.WebGLRenderer,
   weather: WeatherCondition,
-): THREE.Texture {
+): THREE.WebGLRenderTarget {
   const envScene = new THREE.Scene();
   const disposables: Array<{ dispose: () => void }> = [];
 
@@ -116,12 +116,12 @@ export function createProceduralHdri(
 
   const pmrem = new THREE.PMREMGenerator(renderer);
   pmrem.compileEquirectangularShader();
-  const envTex = pmrem.fromScene(envScene, 0.025).texture;
+  const target = pmrem.fromScene(envScene, 0.025);
   pmrem.dispose();
 
   for (const d of disposables) {
     d.dispose();
   }
 
-  return envTex;
+  return target;
 }
