@@ -1,0 +1,249 @@
+{
+  "method": "Conservative complete-footprint clearance against road/apron/barrier corridor, sampled at track resolution with additional 2m margin. Decorative placements are not surveyed real locations.",
+  "pass": true,
+  "rows": [
+    {
+      "circuit": "interlagos",
+      "legacyUnsafeFootprints": [
+        {
+          "index": 0,
+          "clearance": -2.916124868110834
+        },
+        {
+          "index": 45,
+          "clearance": -0.5254590170157476
+        },
+        {
+          "index": 48,
+          "clearance": -13.205545635690338
+        }
+      ],
+      "currentMinimumClearance": 1.0838573895604684,
+      "structures": [
+        {
+          "rootX": 7.448988243908026,
+          "rootZ": 324.2071357175292,
+          "x": 8.688657677726418,
+          "z": 323.36261236388145,
+          "yaw": -2.5435625308071286,
+          "halfX": 9.2,
+          "halfZ": 84.2,
+          "localCenterX": -1.5,
+          "length": 166,
+          "kind": "pit",
+          "groundTop": 38.20242801484534
+        },
+        {
+          "rootX": 91.3664157560626,
+          "rootZ": 340.4201153514045,
+          "x": 92.36071368453531,
+          "z": 339.74827338379987,
+          "yaw": -2.5473658007999145,
+          "halfX": 8.6,
+          "halfZ": 57.2,
+          "localCenterX": -1.2,
+          "length": 112,
+          "kind": "stand",
+          "groundTop": 34.70201605284043
+        },
+        {
+          "rootX": 9.961607584041886,
+          "rootZ": 85.9900907520562,
+          "x": 11.158358628923297,
+          "z": 85.90184713146382,
+          "yaw": -3.067989865500117,
+          "halfX": 8.6,
+          "halfZ": 47.2,
+          "localCenterX": -1.2,
+          "length": 92,
+          "kind": "stand",
+          "groundTop": 40.659026478235674
+        },
+        {
+          "rootX": -87.63765452865435,
+          "rootZ": -204.61925752688026,
+          "x": -88.82293657926313,
+          "z": -204.4318903459103,
+          "yaw": 0.15678081312958891,
+          "halfX": 8.6,
+          "halfZ": 42.2,
+          "localCenterX": -1.2,
+          "length": 82,
+          "kind": "stand",
+          "groundTop": 42.41902775975992
+        },
+        {
+          "rootX": 33.973411680825784,
+          "rootZ": 607.6185867079971,
+          "x": 33.46117764016921,
+          "z": 608.7037670098791,
+          "yaw": 1.1297767574864575,
+          "halfX": 8.6,
+          "halfZ": 45.2,
+          "localCenterX": -1.2,
+          "length": 88,
+          "kind": "stand",
+          "groundTop": 13.969424351892703
+        }
+      ]
+    },
+    {
+      "circuit": "monza",
+      "legacyUnsafeFootprints": [
+        {
+          "index": 0,
+          "clearance": -3.848702499844049
+        }
+      ],
+      "currentMinimumClearance": 0.15129730951867426,
+      "structures": [
+        {
+          "rootX": -30.674720211573874,
+          "rootZ": 462.15141487458715,
+          "x": -29.174786340953535,
+          "z": 462.1654997517926,
+          "yaw": 3.132202597461643,
+          "halfX": 9.2,
+          "halfZ": 84.2,
+          "localCenterX": -1.5,
+          "length": 166,
+          "kind": "pit",
+          "groundTop": 0.49284294300711173
+        },
+        {
+          "rootX": 29.082480585144577,
+          "rootZ": 522.9940244989185,
+          "x": 30.282363284128934,
+          "z": 523.0108027192657,
+          "yaw": 3.1276103477034494,
+          "halfX": 8.6,
+          "halfZ": 57.2,
+          "localCenterX": -1.2,
+          "length": 112,
+          "kind": "stand",
+          "groundTop": 0.41846374440794065
+        },
+        {
+          "rootX": 29.64092041394214,
+          "rootZ": 233.23793973361325,
+          "x": 30.840919479475613,
+          "z": 233.23943730457844,
+          "yaw": 3.1403446774615125,
+          "halfX": 8.6,
+          "halfZ": 47.2,
+          "localCenterX": -1.2,
+          "length": 92,
+          "kind": "stand",
+          "groundTop": 0.7957603423571041
+        },
+        {
+          "rootX": -31.34143471308009,
+          "rootZ": -66.64626361280372,
+          "x": -32.54115111943296,
+          "z": -66.62017636826234,
+          "yaw": 0.021741083153991703,
+          "halfX": 8.6,
+          "halfZ": 42.2,
+          "localCenterX": -1.2,
+          "length": 82,
+          "kind": "stand",
+          "groundTop": 1.290962604319939
+        },
+        {
+          "rootX": 33.794688289925986,
+          "rootZ": 850.9957143506487,
+          "x": 34.99078431422027,
+          "z": 850.8989967169545,
+          "yaw": -3.060907108072163,
+          "halfX": 8.6,
+          "halfZ": 45.2,
+          "localCenterX": -1.2,
+          "length": 88,
+          "kind": "stand",
+          "groundTop": 0.05288457810442679
+        }
+      ]
+    },
+    {
+      "circuit": "spa",
+      "legacyUnsafeFootprints": [
+        {
+          "index": 0,
+          "clearance": -2.6884330557615828
+        },
+        {
+          "index": 1,
+          "clearance": -7.058230524186144
+        }
+      ],
+      "currentMinimumClearance": 1.3114924647683806,
+      "structures": [
+        {
+          "rootX": -19.815272545246827,
+          "rootZ": 443.1091843855918,
+          "x": -18.341549724744205,
+          "z": 442.8296471817534,
+          "yaw": -2.9541386199000126,
+          "halfX": 9.2,
+          "halfZ": 84.2,
+          "localCenterX": -1.5,
+          "length": 166,
+          "kind": "pit",
+          "groundTop": 41.80998012486388
+        },
+        {
+          "rootX": 62.12366091388529,
+          "rootZ": 476.57042128431976,
+          "x": 63.1979669774201,
+          "z": 476.035756452998,
+          "yaw": -2.6797996407648412,
+          "halfX": 8.6,
+          "halfZ": 57.2,
+          "localCenterX": -1.2,
+          "length": 112,
+          "kind": "stand",
+          "groundTop": 39.705417737341385
+        },
+        {
+          "rootX": 20.030492850121654,
+          "rootZ": 207.92961031057052,
+          "x": 21.230000408431366,
+          "z": 207.89523564609402,
+          "yaw": -3.112943180809154,
+          "halfX": 8.6,
+          "halfZ": 47.2,
+          "localCenterX": -1.2,
+          "length": 92,
+          "kind": "stand",
+          "groundTop": 42.846380117853464
+        },
+        {
+          "rootX": -55.71364919274046,
+          "rootZ": -88.36154357869138,
+          "x": -56.90256879542494,
+          "z": -88.19884699497624,
+          "yaw": 0.1359993354144473,
+          "halfX": 8.6,
+          "halfZ": 42.2,
+          "localCenterX": -1.2,
+          "length": 82,
+          "kind": "stand",
+          "groundTop": 43.56347638329842
+        },
+        {
+          "rootX": 291.4078256474582,
+          "rootZ": 688.3348852690542,
+          "x": 292.16752919445906,
+          "z": 687.405987793186,
+          "yaw": -2.256330104731281,
+          "halfX": 8.6,
+          "halfZ": 45.2,
+          "localCenterX": -1.2,
+          "length": 88,
+          "kind": "stand",
+          "groundTop": 25.782690626227787
+        }
+      ]
+    }
+  ]
+}

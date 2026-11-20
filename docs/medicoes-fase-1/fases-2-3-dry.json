@@ -1,0 +1,26 @@
+{
+  "p50ms": 16.699999999999818,
+  "p95ms": 16.800000000000182,
+  "audio": [
+    "crowd_start",
+    "crowd_stands"
+  ],
+  "stands": 7,
+  "weather": "dry",
+  "cars": 22,
+  "stats": {
+    "fps": 60,
+    "physicsHz": 180,
+    "physicsSteps": 500,
+    "physicsDroppedSeconds": 0.17222222222222222,
+    "calls": 1506,
+    "triangles": 1119408,
+    "camera": "tcam",
+    "track": "interlagos",
+    "near": 0.14,
+    "fov": 64.05074406665759
+  },
+  "transferBytes": 62122065,
+  "exceptions": [],
+  "httpErrors": []
+}

@@ -1,0 +1,51 @@
+{
+  "pass": true,
+  "idle": {
+    "rms": 0.018643961378134528,
+    "peak": 0.05058877915143967,
+    "db": -34.58923610800984,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "loaded": [
+        "kerb_rumble",
+        "asphalt",
+        "engine_provisional",
+        "gravel"
+      ]
+    }
+  },
+  "acceleration": {
+    "rms": 0.051485072755568774,
+    "peak": 0.1419515162706375,
+    "db": -25.766373384065048,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "loaded": [
+        "engine_provisional",
+        "asphalt",
+        "kerb_rumble",
+        "gravel"
+      ]
+    }
+  },
+  "muted": {
+    "rms": 0,
+    "peak": 0,
+    "db": -240,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "loaded": [
+        "asphalt",
+        "engine_provisional",
+        "kerb_rumble",
+        "gravel"
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "initial": {
+    "running": true,
+    "starting": false,
+    "manual": false,
+    "gear": 1
+  },
+  "off": {
+    "running": false,
+    "starting": false,
+    "manual": false,
+    "gear": 1
+  },
+  "manual": {
+    "running": false,
+    "starting": false,
+    "manual": true,
+    "gear": 2
+  },
+  "controls": {
+    "rain": true,
+    "rivals": true,
+    "sliders": 10
+  },
+  "wet": {
+    "weather": "wet",
+    "materialWet": 0.44
+  },
+  "memory": [
+    {
+      "geometries": 255,
+      "textures": 47
+    },
+    {
+      "geometries": 255,
+      "textures": 47
+    },
+    {
+      "geometries": 255,
+      "textures": 47
+    }
+  ],
+  "stats": {
+    "fps": 60,
+    "physicsHz": 180,
+    "physicsSteps": 253,
+    "physicsDroppedSeconds": 0,
+    "calls": 1537,
+    "triangles": 1225026,
+    "camera": "tcam",
+    "track": "interlagos",
+    "near": 0.14,
+    "fov": 64
+  },
+  "exceptions": [],
+  "pass": true
+}

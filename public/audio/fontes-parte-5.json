@@ -1,0 +1,23 @@
+[
+  {
+    "id": "engine_onboard",
+    "sourceFile": "/Users/josearmandorodriguesdealmeida/verstappen_onboard.wav",
+    "startSeconds": 75.25,
+    "durationSeconds": 0.95,
+    "edits": "highpass=f=70,lowpass=f=14000, mono48kPCM16, crossfade50ms, peak -7dBFS",
+    "sourceSha256": "e81cbb2e8b8ba3a1241e49a587a737fa8783e402b23047216b63a1fccfe0dce6",
+    "source": "Arquivo fornecido pelo usuário; integração autorizada nesta conversa; origem, era e RPM não verificados. Recorte por inspeção espectral; aprovação auditiva pendente."
+  },
+  {
+    "id": "rain_ambient",
+    "sourceFile": "work/rain-heavy.mp3",
+    "startSeconds": 25,
+    "durationSeconds": 12,
+    "edits": "highpass=f=100,lowpass=f=11000, mono48kPCM16, crossfade50ms, peak -12dBFS",
+    "sourceSha256": "41e0018e0cb52362a5e32f545c1bf20e58c775d6b86b4020f58354eb7cdd70e8",
+    "source": "InspectorJ — Ambience, Rain, Heavy, A.wav",
+    "url": "https://freesound.org/people/InspectorJ/sounds/321173/",
+    "license": "CC BY 4.0 https://creativecommons.org/licenses/by/4.0/",
+    "input": "Prévia pública MP3; não master WAV; gravação real de chuva"
+  }
+]

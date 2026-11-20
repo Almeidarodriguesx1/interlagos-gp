@@ -1,0 +1,73 @@
+{
+  "allIdentical": true,
+  "files": [
+    {
+      "file": "public/audio/.gitkeep",
+      "identical": true
+    },
+    {
+      "file": "public/audio/CREDITS.txt",
+      "identical": true
+    },
+    {
+      "file": "public/audio/asphalt.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/engine-provisional-source.json",
+      "identical": true
+    },
+    {
+      "file": "public/audio/engine_onboard.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/engine_provisional.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/fontes-e-edicoes.json",
+      "identical": true
+    },
+    {
+      "file": "public/audio/fontes-parte-3.json",
+      "identical": true
+    },
+    {
+      "file": "public/audio/fontes-parte-5.json",
+      "identical": true
+    },
+    {
+      "file": "public/audio/gear_downshift.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/gear_upshift.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/grass.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/gravel.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/gravel_brake.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/kerb_rumble.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/rain_ambient.wav",
+      "identical": true
+    },
+    {
+      "file": "public/audio/tire_screech.wav",
+      "identical": true
+    }
+  ]
+}

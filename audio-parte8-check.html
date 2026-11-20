@@ -1,0 +1,16 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Parte 8 — áudio gravado</title><pre id="result">Executando…</pre><script type="module">
+import {RecordedAudioEngine} from '/src/audio/RecordedAudioEngine.ts';
+const original=window.AudioContext;
+function encode(buffer){const channels=buffer.numberOfChannels,n=buffer.length,bytes=new ArrayBuffer(44+n*channels*2),view=new DataView(bytes);const str=(p,s)=>{for(let i=0;i<s.length;i++)view.setUint8(p+i,s.charCodeAt(i));};str(0,'RIFF');view.setUint32(4,36+n*channels*2,true);str(8,'WAVE');str(12,'fmt ');view.setUint32(16,16,true);view.setUint16(20,1,true);view.setUint16(22,channels,true);view.setUint32(24,buffer.sampleRate,true);view.setUint32(28,buffer.sampleRate*channels*2,true);view.setUint16(32,channels*2,true);view.setUint16(34,16,true);str(36,'data');view.setUint32(40,n*channels*2,true);for(let i=0;i<n;i++)for(let c=0;c<channels;c++)view.setInt16(44+(i*channels+c)*2,Math.round(Math.max(-1,Math.min(1,buffer.getChannelData(c)[i]))*32767),true);let s='';const a=new Uint8Array(bytes);for(let i=0;i<a.length;i+=32768)s+=String.fromCharCode(...a.subarray(i,i+32768));return btoa(s);}
+try{
+ const ctx=new OfflineAudioContext(2,48000*20,48000),resume=ctx.resume.bind(ctx);ctx.resume=async()=>{};ctx.close=async()=>{};Object.defineProperty(ctx,'state',{get:()=> 'running'});window.AudioContext=function(){return ctx;};
+ const engine=new RecordedAudioEngine();engine.init();for(let i=0;i<500&&engine.status.loading;i++)await new Promise(r=>setTimeout(r,10));if(engine.status.loading)throw Error('Load timeout');
+ for(const bus of ['surfaces','impacts','rivals','wind','rain','ui'])engine.setVolume(bus,0);engine.setVolume('master',.8);engine.setVolume('engine',1);
+ const update=t=>{let rpm=t<.5?4000:t<3?4000+(t-.5)/2.5*6500:t<11?10500:t<16?10500-(t-11)/5*6000:4500+(t-16)/4*5500;engine.update({active:true,engineRunning:true,rpm,gear:t<3?2:t<16?5:3,throttle:t<11?.9:t<16?0:.75,brake:t>=11&&t<16?.2:0,speedMs:0,slipRatio:0,ersActive:false,onKerb:false,onTrack:true,wet:false,isOnboard:true,contacts:[]});};
+ update(0);const times=Array.from({length:199},(_,i)=>(i+1)/10),suspends=times.map(t=>ctx.suspend(t)),render=ctx.startRendering();
+ for(let i=0;i<times.length;i++){await suspends[i];update(times[i]);await resume();}
+ const output=await render;window.testAudioWav=encode(output);let peak=0,sum=0;for(let c=0;c<2;c++)for(const value of output.getChannelData(c)){peak=Math.max(peak,Math.abs(value));sum+=value*value;}
+ const result={pass:peak>.001&&peak<1&&engine.status.decodedBytes<64*1024*1024,peak,rms:Math.sqrt(sum/output.length/2),decodedBytes:engine.status.decodedBytes,engineReady:engine.status.engineReady,duration:20,timeline:'0–3 idle/acceleration; 3–11 steady revs; 11–16 lift/deceleration; 16–20 acceleration; actual RecordedAudioEngine graph, recorded PCM only'};
+ engine.dispose();document.querySelector('#result').textContent=JSON.stringify(result,null,2);
+}catch(error){document.querySelector('#result').textContent=JSON.stringify({pass:false,error:String(error)});}finally{window.AudioContext=original;}
+</script></html>

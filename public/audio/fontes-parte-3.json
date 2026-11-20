@@ -1,0 +1,50 @@
+[
+  {
+    "key": "tire",
+    "page": "https://freesound.org/people/RutgerMuller/sounds/104026/",
+    "preview": "https://cdn.freesound.org/previews/104/104026_179538-hq.mp3",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "inputFormat": "Prévia pública MP3; não master original",
+    "inputSha256": "0bfe34b01bbfcbf782b88a1cb7df7b88f58ed30ad9c3d6bf1fe08234a9e8fe47",
+    "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+    "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+    "author": "RutgerMuller"
+  },
+  {
+    "key": "gear",
+    "page": "https://freesound.org/people/UnplugTheFridge/sounds/529222/",
+    "preview": "https://cdn.freesound.org/previews/529/529222_1138214-hq.mp3",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "inputFormat": "Prévia pública MP3; não master original",
+    "inputSha256": "3ff61923fc614652ac1c21bc7853b56da918374df05bf06e1d7cd98cab068ac5",
+    "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+    "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+    "author": "UnplugTheFridge"
+  },
+  {
+    "key": "grass",
+    "page": "https://freesound.org/people/alegemaate/sounds/364712/",
+    "preview": "https://cdn.freesound.org/previews/364/364712_2531187-hq.mp3",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "inputFormat": "Prévia pública MP3; não master original",
+    "inputSha256": "d2d3c13de555f3c61dfbcff1b1dc01414ce718870e1aeef0b4a82ee5959507e1",
+    "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+    "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+    "author": "Allan Legemaate (alegemaate)"
+  },
+  {
+    "key": "gravel_brake",
+    "page": "https://freesound.org/people/kyles/sounds/637161/",
+    "preview": "https://cdn.freesound.org/previews/637/637161_612689-hq.mp3",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "inputFormat": "Prévia pública MP3; não master original",
+    "inputSha256": "a116ebdca571da0b897d6baf183d01dfa7a0ca02e073c1dbdc905d3bd2ddfb38",
+    "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+    "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+    "author": "kyles"
+  }
+]

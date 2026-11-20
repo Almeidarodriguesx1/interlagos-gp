@@ -1,0 +1,160 @@
+{
+  "pass": true,
+  "deltaDb": 1.5827850319283243e-7,
+  "menu": {
+    "rms": 0.04977992547035928,
+    "peak": 0.1428491771221161,
+    "db": -26.05891515890204,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "decodedBytes": 4880608
+    }
+  },
+  "cockpit": {
+    "rms": 0.04977992637747329,
+    "peak": 0.1428491771221161,
+    "db": -26.058915000623536,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "decodedBytes": 4880608
+    }
+  },
+  "external": {
+    "rms": 0.04976006212530145,
+    "peak": 0.14194677770137787,
+    "db": -26.062381722028533,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "decodedBytes": 4880608
+    }
+  },
+  "muted": {
+    "rms": 0,
+    "peak": 0,
+    "db": -240,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "decodedBytes": 4880608
+    }
+  },
+  "kerbDrive": {
+    "rms": 0.06170951325251941,
+    "peak": 0.17448954284191132,
+    "db": -24.1929575833242,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "decodedBytes": 4880608
+    }
+  },
+  "brakeDrive": {
+    "rms": 0.05004288836851528,
+    "peak": 0.14434312283992767,
+    "db": -26.01315263412612,
+    "status": {
+      "engineReady": false,
+      "enginePlayable": true,
+      "engineMode": "recorded-provisional",
+      "decodedBytes": 4880608
+    }
+  },
+  "effects": {
+    "asphalt": {
+      "rms": 0.0162114681084714,
+      "peak": 0.04666116088628769,
+      "db": -35.80355307435975,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    },
+    "kerb_rumble": {
+      "rms": 0.042406104860103856,
+      "peak": 0.08668602257966995,
+      "db": -27.451432341634387,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    },
+    "grass": {
+      "rms": 0.008632887092691187,
+      "peak": 0.10434028506278992,
+      "db": -41.27687878154944,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    },
+    "gravel": {
+      "rms": 0.01162372571451981,
+      "peak": 0.11897831410169601,
+      "db": -38.6930929330375,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    },
+    "tire_screech": {
+      "rms": 0.01520260353149054,
+      "peak": 0.06979987770318985,
+      "db": -36.36164060619013,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    },
+    "gear_upshift": {
+      "rms": 0.005819950258200111,
+      "peak": 0.05744222551584244,
+      "db": -44.70161454302122,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    },
+    "gear_downshift": {
+      "rms": 0.005819950663094482,
+      "peak": 0.05744222551584244,
+      "db": -44.701613938743264,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    },
+    "gravel_brake": {
+      "rms": 0.011144257625293131,
+      "peak": 0.05710819363594055,
+      "db": -39.05897713493033,
+      "status": {
+        "engineReady": false,
+        "enginePlayable": true,
+        "engineMode": "recorded-provisional",
+        "decodedBytes": 4880608
+      }
+    }
+  }
+}

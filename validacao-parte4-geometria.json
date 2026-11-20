@@ -1,0 +1,45 @@
+{
+  "pass": true,
+  "comparison": "Part 3 vs Part 4; current production map empty",
+  "rows": [
+    {
+      "track": "interlagos",
+      "maxPositionDeltaM": {
+        "roadGeo": 0,
+        "apronGeo": 0,
+        "kerbLeftGeo": 0,
+        "kerbRightGeo": 0,
+        "wallSideGeo": 0,
+        "wallTopGeo": 0,
+        "terrainGeo": 0,
+        "corridorSkirtGeo": 0
+      }
+    },
+    {
+      "track": "monza",
+      "maxPositionDeltaM": {
+        "roadGeo": 0,
+        "apronGeo": 0,
+        "kerbLeftGeo": 0,
+        "kerbRightGeo": 0,
+        "wallSideGeo": 0,
+        "wallTopGeo": 0,
+        "terrainGeo": 0,
+        "corridorSkirtGeo": 0
+      }
+    },
+    {
+      "track": "spa",
+      "maxPositionDeltaM": {
+        "roadGeo": 0,
+        "apronGeo": 0,
+        "kerbLeftGeo": 0,
+        "kerbRightGeo": 0,
+        "wallSideGeo": 0,
+        "wallTopGeo": 0,
+        "terrainGeo": 0,
+        "corridorSkirtGeo": 0
+      }
+    }
+  ]
+}

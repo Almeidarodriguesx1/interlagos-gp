@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "peak": 0.10545417666435242,
+  "rms": 0.018998142760021434,
+  "decodedBytes": 11736928,
+  "engineReady": false,
+  "duration": 20,
+  "timeline": "0–3 idle/acceleration; 3–11 steady revs; 11–16 lift/deceleration; 16–20 acceleration; actual RecordedAudioEngine graph, recorded PCM only"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Car Engine Loop 96kHz, 4s",
+  "author": "qubodup",
+  "source": "https://opengameart.org/content/car-engine-loop-96khz-4s",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "file": "engine_provisional.wav",
+  "sha256": "77baccfe9298369621ebcbcff42776731cc1c1be777f95e3b6bf0f86c139c63c",
+  "original": "engine-loop-1.wav, WAV original 96kHz/24bit estéreo",
+  "changes": "Conversão para mono PCM16/48kHz e ganho +14,36dB; pitch e volume variam em execução.",
+  "limitations": "Gravação de automóvel genérico. Não é gravação de F1 2026. RPM nativo desconhecido. Não certifica as seis bandas definitivas."
+}

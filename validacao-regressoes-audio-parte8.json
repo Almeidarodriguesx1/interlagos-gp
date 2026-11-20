@@ -1,0 +1,125 @@
+{
+  "pass": true,
+  "cases": {
+    "passPreview": {
+      "rms": [
+        0.006257778155832842,
+        2.2762484778101622e-8
+      ],
+      "peak": 0.02374166063964367,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "passPreviewZero": {
+      "rms": [
+        0,
+        0
+      ],
+      "peak": 0,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "motor": {
+      "rms": [
+        0.02179182346361223,
+        0.02179182346361223
+      ],
+      "peak": 0.08296547830104828,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "off": {
+      "rms": [
+        0,
+        0
+      ],
+      "peak": 0,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "monitor": {
+      "rms": [
+        0.02179182346361223,
+        0.02179182346361223
+      ],
+      "peak": 0.08296547830104828,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "rain": {
+      "rms": [
+        0.0014716130399280345,
+        0.0014716130399280345
+      ],
+      "peak": 0.007004890125244856,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "rainZero": {
+      "rms": [
+        0,
+        0
+      ],
+      "peak": 0,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "rival": {
+      "rms": [
+        0.009995302525208333,
+        2.889766454850903e-8
+      ],
+      "peak": 0.048710133880376816,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "far": {
+      "rms": [
+        0.0005806978391213149,
+        1.6831127236644239e-9
+      ],
+      "peak": 0.0028186324052512646,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "rivalsZero": {
+      "rms": [
+        0,
+        0
+      ],
+      "peak": 0,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "volumeZero": {
+      "rms": [
+        0,
+        0
+      ],
+      "peak": 0,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    },
+    "mute": {
+      "rms": [
+        0,
+        0
+      ],
+      "peak": 0,
+      "decodedBytes": 11736928,
+      "mode": "recorded-onboard-experimental",
+      "ready": false
+    }
+  }
+}

@@ -1,0 +1,5 @@
+[track:interlagos] samples=2062 maxStep=2.75m pokes=0 (maxDelta=-0.672m) apronGaps>1.6m=0 (maxGap=1.414m) barrierGaps=0 -> PASS
+[track:monza] samples=2530 maxStep=2.75m pokes=0 (maxDelta=-0.560m) apronGaps>1.6m=0 (maxGap=1.422m) barrierGaps=0 -> PASS
+[track:spa] samples=3003 maxStep=2.75m pokes=0 (maxDelta=-0.679m) apronGaps>1.6m=0 (maxGap=1.404m) barrierGaps=0 -> PASS
+[car:clearances] floorVertHits=0 sidewallGap=0.0015m -> PASS
+ALL GEOMETRY & CLEARANCE CHECKS PASSED.

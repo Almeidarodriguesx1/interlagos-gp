@@ -1,0 +1,40 @@
+{
+  "initial": {
+    "running": true,
+    "starting": false,
+    "manual": false,
+    "gear": 1
+  },
+  "off": {
+    "running": false,
+    "starting": false,
+    "manual": false,
+    "gear": 1
+  },
+  "manual": {
+    "running": false,
+    "starting": false,
+    "manual": true,
+    "gear": 2
+  },
+  "ui": {
+    "driving": true,
+    "rain": true,
+    "rivals": true,
+    "sliderCount": 10
+  },
+  "exceptions": [],
+  "stats": {
+    "fps": 60,
+    "physicsHz": 180,
+    "physicsSteps": 314,
+    "physicsDroppedSeconds": 0.27222222222222225,
+    "calls": 1542,
+    "triangles": 1084830,
+    "camera": "chase",
+    "track": "interlagos",
+    "near": 0.35,
+    "fov": 60.0428572278729
+  },
+  "pass": true
+}

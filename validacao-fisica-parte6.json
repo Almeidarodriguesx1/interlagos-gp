@@ -1,0 +1,274 @@
+{
+  "before": {
+    "version": "part5",
+    "hz": 180,
+    "circuit": "interlagos",
+    "conditions": "solo; ABS/TC on; tire wear on; default tires; 3 flying laps; no fuel model",
+    "rows": [
+      {
+        "weather": "dry",
+        "difficulty": "iniciante",
+        "laps": [
+          62.86111111110223,
+          62.62222222227206,
+          62.62222222227206
+        ],
+        "maxKmh": 286.0604380875913,
+        "minKmh": 147.17244945693133,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 9.646296296297377,
+        "sectorMeanKmh": [
+          242.51103232478297,
+          257.20778901331295,
+          226.49420839211453
+        ]
+      },
+      {
+        "weather": "dry",
+        "difficulty": "competitivo",
+        "laps": [
+          58.816666666655266,
+          58.58333333337911,
+          58.583333333379954
+        ],
+        "maxKmh": 320.5448659900457,
+        "minKmh": 157.03365225742525,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 9.048148148149137,
+        "sectorMeanKmh": [
+          261.20419905529906,
+          275.01083686375597,
+          240.84982338270794
+        ]
+      },
+      {
+        "weather": "dry",
+        "difficulty": "pro",
+        "laps": [
+          56.92222222221175,
+          56.52777777781945,
+          56.53333333337832
+        ],
+        "maxKmh": 337.1425943630184,
+        "minKmh": 162.43445603043816,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 8.698148148149082,
+        "sectorMeanKmh": [
+          271.0441218976487,
+          285.78926661771857,
+          248.26830331595787
+        ]
+      },
+      {
+        "weather": "dry",
+        "difficulty": "lendario",
+        "laps": [
+          56.13333333332324,
+          55.861111111151246,
+          55.866666666711126
+        ],
+        "maxKmh": 337.2008408012248,
+        "minKmh": 168.07401913605614,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 7.9074074074082175,
+        "sectorMeanKmh": [
+          274.53595706721336,
+          290.5879815826426,
+          251.67399468982913
+        ]
+      },
+      {
+        "weather": "wet",
+        "difficulty": "competitivo",
+        "laps": [
+          62.688888888880136,
+          62.46111111116082,
+          62.46111111116082
+        ],
+        "maxKmh": 320.47800927716816,
+        "minKmh": 136.96271453702988,
+        "offTrackSeconds": 3.283333333333323,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 12.964814814814945,
+        "sectorMeanKmh": [
+          248.61743980722724,
+          260.33156345253,
+          223.10540475351604
+        ]
+      }
+    ],
+    "braking": [
+      {
+        "weather": "dry",
+        "fromKmh": 325,
+        "toKmh": 123,
+        "distance": 66.01484621584882,
+        "time": 1.1555555555555526,
+        "peakG": 8.860067242127677,
+        "impactSteps": 0,
+        "offTrackSteps": 0,
+        "finalGear": 3,
+        "startNorm": 0.029905026803254662
+      },
+      {
+        "weather": "wet",
+        "fromKmh": 325,
+        "toKmh": 123,
+        "distance": 82.84585548155472,
+        "time": 1.449999999999996,
+        "peakG": 6.933743146042103,
+        "impactSteps": 0,
+        "offTrackSteps": 0,
+        "finalGear": 3,
+        "startNorm": 0.029905026803254662
+      }
+    ]
+  },
+  "after": {
+    "version": "physics-v3",
+    "hz": 180,
+    "circuit": "interlagos",
+    "conditions": "solo; ABS/TC on; tire wear on; default tires; 3 flying laps; no fuel model",
+    "rows": [
+      {
+        "weather": "dry",
+        "difficulty": "iniciante",
+        "laps": [
+          86.88888888890011,
+          86.88888888895804,
+          86.88888888890378
+        ],
+        "maxKmh": 286.05418816379455,
+        "minKmh": 71.30975300990335,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 30.26481481481801,
+        "sectorMeanKmh": [
+          179.18858978846495,
+          193.8608683166501,
+          154.43583362840567
+        ]
+      },
+      {
+        "weather": "dry",
+        "difficulty": "competitivo",
+        "laps": [
+          81.85555555556273,
+          81.86666666673182,
+          81.86666666673182
+        ],
+        "maxKmh": 319.49496438458107,
+        "minKmh": 77.3113496105027,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 27.80370370370494,
+        "sectorMeanKmh": [
+          190.24131874112933,
+          207.30173141381977,
+          162.34663376637496
+        ]
+      },
+      {
+        "weather": "dry",
+        "difficulty": "pro",
+        "laps": [
+          79.2222222222273,
+          79.16111111117411,
+          79.16666666672967
+        ],
+        "maxKmh": 334.4271480221547,
+        "minKmh": 81.04759667180615,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 25.74814814814775,
+        "sectorMeanKmh": [
+          196.04760358469457,
+          215.45983063592186,
+          167.35932405732078
+        ]
+      },
+      {
+        "weather": "dry",
+        "difficulty": "lendario",
+        "laps": [
+          78.48333333333782,
+          78.39444444450683,
+          78.39444444450683
+        ],
+        "maxKmh": 334.7151534931881,
+        "minKmh": 82.0998743534242,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 24.894444444443366,
+        "sectorMeanKmh": [
+          198.70312721239478,
+          217.55115761589863,
+          168.83985888381758
+        ]
+      },
+      {
+        "weather": "wet",
+        "difficulty": "competitivo",
+        "laps": [
+          93.23888888890595,
+          93.22777777785197,
+          93.2333333332509
+        ],
+        "maxKmh": 317.96730002848625,
+        "minKmh": 66.39698571109932,
+        "offTrackSeconds": 0,
+        "impactSteps": 0,
+        "brakingSecondsPerLap": 33.859259259265315,
+        "sectorMeanKmh": [
+          168.08532723228026,
+          182.98735760142125,
+          140.96018259310264
+        ]
+      }
+    ],
+    "braking": [
+      {
+        "weather": "dry",
+        "fromKmh": 325,
+        "toKmh": 123,
+        "distance": 121.28440206807547,
+        "time": 2.099999999999994,
+        "peakG": 4.438897608769024,
+        "impactSteps": 0,
+        "offTrackSteps": 0,
+        "finalGear": 2,
+        "startNorm": 0.029905026803254662
+      },
+      {
+        "weather": "wet",
+        "fromKmh": 325,
+        "toKmh": 123,
+        "distance": 149.52879767240273,
+        "time": 2.5944444444444366,
+        "peakG": 3.65496057935988,
+        "impactSteps": 0,
+        "offTrackSteps": 0,
+        "finalGear": 2,
+        "startNorm": 0.029905026803254662
+      }
+    ]
+  },
+  "geometry": [
+    {
+      "track": "interlagos",
+      "identical": true
+    },
+    {
+      "track": "monza",
+      "identical": true
+    },
+    {
+      "track": "spa",
+      "identical": true
+    }
+  ]
+}

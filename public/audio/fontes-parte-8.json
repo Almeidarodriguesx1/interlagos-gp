@@ -1,0 +1,115 @@
+{
+  "sourceFile": "verstappen_onboard.wav",
+  "sourceSha256": "e81cbb2e8b8ba3a1241e49a587a737fa8783e402b23047216b63a1fccfe0dce6",
+  "authorization": "User authorized editing supplied onboard; source era and actual RPM remain unverified",
+  "method": "18 short recorded grains from 75.27–75.93s, local low-order spectral stabilization near 185Hz, RMS leveling, non-repeating grain selection, Hann overlap/add, 80ms circular crossfade, mono48kPCM16, peak -8dBFS. No oscillators or generated engine tones. 185Hz is an editing reference, not certified RPM.",
+  "takes": [
+    {
+      "start": 75.27,
+      "originalLowOrderPeakHz": 161.1328125,
+      "resampleRate": 1.148121212121212
+    },
+    {
+      "start": 75.30059,
+      "originalLowOrderPeakHz": 161.1328125,
+      "resampleRate": 1.148121212121212
+    },
+    {
+      "start": 75.33118,
+      "originalLowOrderPeakHz": 158.203125,
+      "resampleRate": 1.1693827160493828
+    },
+    {
+      "start": 75.36176,
+      "originalLowOrderPeakHz": 158.203125,
+      "resampleRate": 1.1693827160493828
+    },
+    {
+      "start": 75.39235,
+      "originalLowOrderPeakHz": 178.7109375,
+      "resampleRate": 1.0351912568306012
+    },
+    {
+      "start": 75.42294,
+      "originalLowOrderPeakHz": 178.7109375,
+      "resampleRate": 1.0351912568306012
+    },
+    {
+      "start": 75.45353,
+      "originalLowOrderPeakHz": 175.78125,
+      "resampleRate": 1.0524444444444445
+    },
+    {
+      "start": 75.48412,
+      "originalLowOrderPeakHz": 175.78125,
+      "resampleRate": 1.0524444444444445
+    },
+    {
+      "start": 75.51471,
+      "originalLowOrderPeakHz": 175.78125,
+      "resampleRate": 1.0524444444444445
+    },
+    {
+      "start": 75.54529,
+      "originalLowOrderPeakHz": 172.8515625,
+      "resampleRate": 1.0702824858757063
+    },
+    {
+      "start": 75.57588,
+      "originalLowOrderPeakHz": 169.921875,
+      "resampleRate": 1.0887356321839081
+    },
+    {
+      "start": 75.60647,
+      "originalLowOrderPeakHz": 187.5,
+      "resampleRate": 0.9866666666666667
+    },
+    {
+      "start": 75.63706,
+      "originalLowOrderPeakHz": 187.5,
+      "resampleRate": 0.9866666666666667
+    },
+    {
+      "start": 75.66765,
+      "originalLowOrderPeakHz": 190.4296875,
+      "resampleRate": 0.9714871794871794
+    },
+    {
+      "start": 75.69824,
+      "originalLowOrderPeakHz": 190.4296875,
+      "resampleRate": 0.9714871794871794
+    },
+    {
+      "start": 75.72882,
+      "originalLowOrderPeakHz": 190.4296875,
+      "resampleRate": 0.9714871794871794
+    },
+    {
+      "start": 75.75941,
+      "originalLowOrderPeakHz": 187.5,
+      "resampleRate": 0.9866666666666667
+    },
+    {
+      "start": 75.79,
+      "originalLowOrderPeakHz": 184.5703125,
+      "resampleRate": 1.0023280423280423
+    }
+  ],
+  "outputs": [
+    {
+      "file": "engine_onboard.wav",
+      "duration": 7.92,
+      "sha256": "46ee2e114e6a81a7812a6b8a591613fca4a1826a8c915e30c1d4c0b7141467b2"
+    },
+    {
+      "file": "engine_onboard_alt1.wav",
+      "duration": 7.92,
+      "sha256": "4eca141081a300e392907685ed4cfd6705597c03f9b2a798be4dce55f53c3260"
+    },
+    {
+      "file": "engine_onboard_alt2.wav",
+      "duration": 7.92,
+      "sha256": "0c2d4151f8f1b8d0b7ed83d5b9d0423141cc1e04ec1e0ca8823250a87e279d4b"
+    }
+  ]
+}

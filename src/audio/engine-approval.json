@@ -1,0 +1,29 @@
+{
+  "approved": false,
+  "source": "",
+  "license": "",
+  "note": "Confirmar origem, licença, RPM e cortes antes de ativar. Faixas atuais: 4200,6300,8400,10500,12300 rpm; off-throttle: 8800 rpm.",
+  "bands": [
+    {
+      "id": "engine_idle",
+      "nativeRpm": 4200
+    },
+    {
+      "id": "engine_low",
+      "nativeRpm": 6300
+    },
+    {
+      "id": "engine_mid",
+      "nativeRpm": 8400
+    },
+    {
+      "id": "engine_high",
+      "nativeRpm": 10500
+    },
+    {
+      "id": "engine_limiter",
+      "nativeRpm": 12300
+    }
+  ],
+  "offThrottleRpm": 8800
+}

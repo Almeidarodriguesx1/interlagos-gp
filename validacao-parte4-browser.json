@@ -1,0 +1,118 @@
+{
+  "ready": true,
+  "before": {
+    "fps": 60,
+    "physicsHz": 180,
+    "physicsSteps": 0,
+    "physicsDroppedSeconds": 0,
+    "calls": 1392,
+    "triangles": 805502,
+    "camera": "chase",
+    "track": "interlagos",
+    "near": 0.35,
+    "fov": 60
+  },
+  "after": {
+    "fps": 3,
+    "physicsHz": 180,
+    "physicsSteps": 90,
+    "physicsDroppedSeconds": 1.9944444444444445,
+    "calls": 1391,
+    "triangles": 805490,
+    "camera": "chase",
+    "track": "interlagos",
+    "near": 0.35,
+    "fov": 60.56813737187746
+  },
+  "audio": {
+    "loaded": [
+      "asphalt",
+      "kerb_rumble",
+      "engine_provisional",
+      "grass",
+      "gravel",
+      "gear_upshift",
+      "tire_screech",
+      "gear_downshift",
+      "gravel_brake"
+    ],
+    "missing": [
+      "engine_idle",
+      "engine_low",
+      "engine_mid",
+      "engine_limiter",
+      "engine_high",
+      "engine_off_throttle",
+      "dirt",
+      "water",
+      "wind_aero",
+      "collision_carbon",
+      "countdown",
+      "race_start",
+      "record"
+    ],
+    "engineReady": false,
+    "decodedBytes": 4484032,
+    "contacts": [
+      {
+        "wheel": "FL",
+        "side": -1,
+        "material": "asphalt",
+        "grounded": true,
+        "speed": 8.315551314181285,
+        "slip": 0.11924678802229217,
+        "load": 1.0000001553991047
+      },
+      {
+        "wheel": "FR",
+        "side": 1,
+        "material": "asphalt",
+        "grounded": true,
+        "speed": 8.315551314181285,
+        "slip": 0.11924678802229217,
+        "load": 0.9999998446008954
+      },
+      {
+        "wheel": "RL",
+        "side": -1,
+        "material": "asphalt",
+        "grounded": true,
+        "speed": 8.315551314181285,
+        "slip": 0.11924678802229217,
+        "load": 1.0000001553991047
+      },
+      {
+        "wheel": "RR",
+        "side": 1,
+        "material": "asphalt",
+        "grounded": true,
+        "speed": 8.315551314181285,
+        "slip": 0.11924678802229217,
+        "load": 0.9999998446008954
+      }
+    ],
+    "loading": false,
+    "errors": {},
+    "engineIssues": [
+      "Motor aguardando aprovação",
+      "Origem do motor não informada",
+      "Licença do motor não informada",
+      "Amostra ausente: engine_idle",
+      "Amostra ausente: engine_low",
+      "Amostra ausente: engine_mid",
+      "Amostra ausente: engine_high",
+      "Amostra ausente: engine_limiter",
+      "Amostra ausente: engine_off_throttle"
+    ],
+    "activeLoops": 9,
+    "enginePlayable": true,
+    "engineMode": "recorded-provisional",
+    "contextState": "running",
+    "playbackError": "",
+    "motorRate": 0.9719079150632448,
+    "motorCutoff": 17685.81992365426
+  },
+  "menuHasSurfaceTests": true,
+  "exceptions": [],
+  "pass": true
+}

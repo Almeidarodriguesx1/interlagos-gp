@@ -1,0 +1,21 @@
+{
+  "part": 4,
+  "checks": {
+    "lint": "pass",
+    "tests": {
+      "passed": 42,
+      "failed": 0
+    },
+    "build": "pass",
+    "check:geom": "pass"
+  },
+  "browserResult": "validacao-parte4-browser.json",
+  "geometryComparison": "validacao-parte4-geometria.json",
+  "warnings": [
+    "Existing main bundle >500 kB",
+    "Existing Vite __dirname config warning",
+    "Software-rendered browser test only 3-4 FPS; physics time is discarded after 100 ms/frame"
+  ],
+  "audio": "Existing recorded provisional engine, enginePlayable true, engineReady false; no synthesis or new samples",
+  "track": "Current source geometry preserved; no new surface zones"
+}

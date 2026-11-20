@@ -1,0 +1,42 @@
+{
+  "pilot": {
+    "ready": true,
+    "source": "Blender",
+    "inspection": {
+      "triangles": 59013,
+      "size": [
+        2.0070000253617764,
+        1.0975690554616053,
+        5.0070909372572405
+      ],
+      "missing": []
+    }
+  },
+  "controls": {
+    "frontZ": 1.7999999523162842,
+    "rearZ": -1.7999999523162842,
+    "wheelbase": 3.5999999046325684
+  },
+  "steeringMoves": true,
+  "wheelMoves": true,
+  "stands": 4,
+  "foundations": 5,
+  "stats": {
+    "fps": 19,
+    "physicsHz": 180,
+    "physicsSteps": 30,
+    "physicsDroppedSeconds": 0.2611111111111111,
+    "calls": 1535,
+    "triangles": 1222310,
+    "camera": "tcam",
+    "track": "interlagos",
+    "near": 0.14,
+    "fov": 60.538192012476046
+  },
+  "memory": {
+    "geometries": 254,
+    "textures": 39
+  },
+  "exceptions": [],
+  "pass": true
+}

@@ -1,0 +1,18 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Parte 5: ensaio de áudio</title><pre id="result">Executando…</pre><script type="module">
+import {RecordedAudioEngine} from '/src/audio/RecordedAudioEngine.ts';
+async function capture(kind){
+ const ctx=new OfflineAudioContext(2,96000,48000);ctx.resume=async()=>{};ctx.close=async()=>{};Object.defineProperty(ctx,'state',{get:()=> 'running'});window.AudioContext=function(){return ctx};
+ const engine=new RecordedAudioEngine();engine.init();for(let i=0;i<500&&engine.status.loading;i++)await new Promise(r=>setTimeout(r,10));if(engine.status.loading)throw Error('Carregamento excedido');
+ engine.setVolume('master',.8);engine.setVolume('engine',kind==='volumeZero'?0:1);engine.setVolume('rain',kind==='rainZero'?0:1);engine.setVolume('rivals',(kind==='rivalsZero'||kind==='passPreviewZero')?0:1);
+ if(kind==='mute')engine.setMuted(true);
+ if(kind.startsWith('passPreview')){engine.setPaused(true);await engine.testAudio('rival_pass',true);}
+ else if(kind==='monitor'){engine.setPaused(true);await engine.testAudio('engine_onboard',true);}
+ else engine.update({active:true,engineRunning:!['off','rain','rainZero','rival','far','rivalsZero'].includes(kind),rpm:10500,gear:3,throttle:1,brake:0,speedMs:0,slipRatio:0,ersActive:false,onKerb:false,onTrack:true,wet:kind.startsWith('rain'),isOnboard:true,contacts:[],cameraPos:{x:0,y:0,z:0},cameraForward:{x:0,y:0,z:1},rivals:['rival','far','rivalsZero'].includes(kind)?[{x:kind==='far'?80:8,y:0,z:0,vx:0,vz:0,rpm:10500,throttle:1}]:[]});
+ const output=await ctx.startRendering(),energy=[0,0];let peak=0;for(let c=0;c<2;c++){const a=output.getChannelData(c);for(let i=19200;i<57600;i++){energy[c]+=a[i]*a[i];peak=Math.max(peak,Math.abs(a[i]));}energy[c]=Math.sqrt(energy[c]/38400);}
+ const result={rms:energy,peak,decodedBytes:engine.status.decodedBytes,mode:engine.status.engineMode,ready:engine.status.engineReady};engine.dispose();return result;
+}
+try{const cases={};for(const id of ['passPreview','passPreviewZero','motor','off','monitor','rain','rainZero','rival','far','rivalsZero','volumeZero','mute'])cases[id]=await capture(id);
+ const pass=cases.passPreview.peak>.001&&cases.passPreviewZero.peak===0&&cases.motor.peak>.001&&cases.monitor.peak>.001&&cases.off.peak===0&&cases.rain.peak>.001&&cases.rainZero.peak===0&&cases.rival.rms[0]>cases.rival.rms[1]&&cases.rival.peak>cases.far.peak&&cases.rivalsZero.peak===0&&cases.volumeZero.peak===0&&cases.mute.peak===0&&cases.motor.decodedBytes<64*1024*1024&&!cases.motor.ready;
+ document.querySelector('#result').textContent=JSON.stringify({pass,cases},null,2);
+}catch(e){document.querySelector('#result').textContent=JSON.stringify({pass:false,error:String(e)});}
+</script></html>

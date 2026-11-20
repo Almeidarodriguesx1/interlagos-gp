@@ -1,0 +1,37 @@
+{
+  "blenderVersion": "5.3.0",
+  "source": {
+    "kind": "Blender authoring/refinement",
+    "base": "Part 7 local pilot prototype",
+    "teamReplica": false
+  },
+  "output": "public/models/pilot-v8.glb",
+  "wheelbaseMeters": 3.6,
+  "widthMeters": 1.96,
+  "kind": "Native Blender refinement of Part 7 prototype, current game dimensions; not a 2026 team replica",
+  "runtimeMeshObjects": 124,
+  "requiredNodes": [
+    "Body",
+    "Wheel_FL",
+    "Wheel_FR",
+    "Wheel_RL",
+    "Wheel_RR",
+    "FrontWing",
+    "RearWing",
+    "RearFlap",
+    "SteeringWheel",
+    "Helmet",
+    "Visor",
+    "CockpitAnchor",
+    "TcamAnchor"
+  ],
+  "repairedUvPoleTangents": 4,
+  "technical_checks_passed": true,
+  "runtimeTriangleCount": 59013,
+  "measuredRuntimeBoundsMeters": [
+    2.007000025,
+    1.097569055,
+    5.007090937
+  ],
+  "runtimeSha256": "59b5a25b46006aab82e064894173facb97849c1da3e62360552f3112335a5f11"
+}

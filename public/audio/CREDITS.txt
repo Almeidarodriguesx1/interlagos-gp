@@ -1,0 +1,36 @@
+Car Engine Loop 96kHz, 4s — qubodup
+https://opengameart.org/content/car-engine-loop-96khz-4s
+Licensed under CC BY 3.0: https://creativecommons.org/licenses/by/3.0/
+Adaptation: mono 48kHz/16bit, gain +14.36dB, variable playback rate and volume in game.
+Generic recorded car engine, not F1 2026.
+
+Other field recordings: bsumusictech, seth-m (CC0); see fontes-e-edicoes.json.
+
+Parte 3 — fontes CC0 1.0:
+RutgerMuller — Tires Squeaking.aif: https://freesound.org/people/RutgerMuller/sounds/104026/
+Allan Legemaate (alegemaate) — Rustling Grass: https://freesound.org/people/alegemaate/sounds/364712/
+UnplugTheFridge — Gear Shift - Park Reverse Drive - Interior Honda: https://freesound.org/people/UnplugTheFridge/sounds/529222/
+kyles — auto car or van stop brake skid gravel short: https://freesound.org/people/kyles/sounds/637161/
+https://creativecommons.org/publicdomain/zero/1.0/
+Prévia MP3 editada: cortes/filtros/ganho/crossfades. Grama é foley de vegetação; marcha é seletor Honda, não transmissão F1; frenagem usa pneu de rua, não freio carbono.
+
+Parte5: chuva gravada por InspectorJ — https://freesound.org/people/InspectorJ/sounds/321173/ — CC BY4.0 https://creativecommons.org/licenses/by/4.0/ ; prévia MP3 recortada/filtrada/loopada.
+Onboard: arquivo pessoal verstappen_onboard.wav fornecido pelo usuário; adaptação autorizada nesta conversa, era/RPM/origem não comprovados. Não é banco certificado F1 2026.
+
+Parte 8: novas edições do mesmo onboard pessoal autorizado, em três texturas gravadas de 7,92 s. Referência de afinação de edição, sem certificação de RPM/era. Detalhes e SHA-256 em fontes-parte-8.json.
+
+Torcida e largada (gravações de ambiente, adaptadas)
+crowd_stands.wav — BeeProductive, Football stadium.wav, CC0 1.0
+https://freesound.org/people/BeeProductive/sounds/395592/
+Prévia MP3 HQ recortada de 4 a 32 s, fades, mono 24 kHz.
+crowd_start.wav — Dan_AudioFile, Football-match_Cheering_Large-crowd_Ambience .stereo.wav, CC BY 4.0
+https://freesound.org/people/Dan_AudioFile/sounds/654085/
+https://creativecommons.org/licenses/by/4.0/
+Prévia MP3 HQ, primeiros cinco segundos, fade de saída, mono 24 kHz.
+
+Luzes de largada (efeito de interface) — relay1.wav, Mihacappy, CC0. Prévia MP3 convertida em WAV mono 24 kHz.
+https://freesound.org/people/Mihacappy/sounds/876593/
+Rádio de largada — amostra de voz gravada do simulador Crew Chief V4, lap_counter/green_green_green/1.wav. Adaptada para WAV mono 24 kHz para a cópia pessoal. Representa um engenheiro simulado.
+https://github.com/mrbelowski/CrewChiefV4/tree/master/CrewChiefV4/sounds/voice/lap_counter/green_green_green
+
+Motores externos: LibreCorsa, public/cars/f12026/audio, engine_ext_on_7900.ogg e engine_ext_off_8500.ogg. Banco identificado no manifesto como F1 2026 Sound Pack - Aston Martin 2026. Usado como som externo compartilhado.

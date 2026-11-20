@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-17",
+  "scope": "Prova de edição de superfícies com gravações reais; não é motor de F1 2026.",
+  "generation": "Nenhum áudio por IA, oscilador ou ruído sintetizado. Apenas edição das fontes.",
+  "sources": [
+    {
+      "title": "rumble strip exit 41.wav",
+      "author": "bsumusictech",
+      "id": 62652,
+      "page": "https://freesound.org/people/bsumusictech/sounds/62652/",
+      "download": "https://cdn.freesound.org/previews/62/62652_791247-hq.mp3",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "input_sha256": "d491a2a28349e68c90cd9d79696465482e8c4c5423f413c94dd55ed387db2459",
+      "provenance": "Gravação de automóvel passando em faixas sonoras de rodovia; não é zebra de autódromo.",
+      "edits": "Trecho 5.1–7.9 s, passa-altas 55 Hz, passa-baixas 6200 Hz, crossfade cíclico 80 ms e pico -6 dBFS."
+    },
+    {
+      "title": "gravel road",
+      "author": "seth-m",
+      "id": 341069,
+      "page": "https://freesound.org/people/seth-m/sounds/341069/",
+      "download": "https://cdn.freesound.org/previews/341/341069_3366749-hq.mp3",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "input_sha256": "a8855a1a1ccadfb91ec9bc9db5e0a698765702384e24274f9572f68f48c34a5e",
+      "provenance": "Honda CR-V em acesso de cascalho, segundo o autor; não é pneu slick de F1.",
+      "edits": "Trecho 0.2–7.1 s, passa-altas 140 Hz, passa-baixas 7200 Hz, crossfade cíclico 80 ms e pico -6 dBFS."
+    }
+  ],
+  "timeline": [
+    {
+      "seconds": "0–2.5",
+      "sound": "Rolagem suave: trecho da gravação de rodovia."
+    },
+    {
+      "seconds": "2.5–4",
+      "sound": "Textura rítmica de zebra: acento à esquerda."
+    },
+    {
+      "seconds": "4–6",
+      "sound": "Rolagem suave."
+    },
+    {
+      "seconds": "6–7.7",
+      "sound": "Segunda passagem rítmica, mais rápida: acento à direita."
+    },
+    {
+      "seconds": "7.7–10",
+      "sound": "Rolagem suave."
+    },
+    {
+      "seconds": "10–15",
+      "sound": "Brita/cascalho."
+    },
+    {
+      "seconds": "15–17.8",
+      "sound": "Brita/cascalho em velocidade de reprodução menor."
+    },
+    {
+      "seconds": "17.8–20",
+      "sound": "Retorno à rolagem suave."
+    }
+  ],
+  "limitations": [
+    "Fontes são prévias públicas MP3; obter os WAV originais pelo Freesound para a produção.",
+    "Não contém motor de F1, nem gravações reais de pneus de F1 ou de Interlagos.",
+    "O identificador legado gravel_grass usa brita também para terra e grama no código atual; serve somente para ensaio.",
+    "Alterações de velocidade no demonstrativo são artísticas, sem calibração física em km/h."
+  ],
+  "implementation_note": "asphalt.wav: trecho 0.2–2.6 s de 62652, filtros 70/4000 Hz, crossfade 80 ms, mono 48kHz, pico -6dBFS. kerb_rumble e gravel: loops documentados acima. Prévia MP3; não master de captação.",
+  "provisionalEngine": {
+    "title": "Car Engine Loop 96kHz, 4s",
+    "author": "qubodup",
+    "source": "https://opengameart.org/content/car-engine-loop-96khz-4s",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "file": "engine_provisional.wav",
+    "sha256": "77baccfe9298369621ebcbcff42776731cc1c1be777f95e3b6bf0f86c139c63c",
+    "original": "engine-loop-1.wav, WAV original 96kHz/24bit estéreo",
+    "changes": "Conversão para mono PCM16/48kHz e ganho +14,36dB; pitch e volume variam em execução.",
+    "limitations": "Gravação de automóvel genérico. Não é gravação de F1 2026. RPM nativo desconhecido. Não certifica as seis bandas definitivas."
+  },
+  "part3Sources": [
+    {
+      "key": "tire",
+      "page": "https://freesound.org/people/RutgerMuller/sounds/104026/",
+      "preview": "https://cdn.freesound.org/previews/104/104026_179538-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "inputFormat": "Prévia pública MP3; não master original",
+      "inputSha256": "0bfe34b01bbfcbf782b88a1cb7df7b88f58ed30ad9c3d6bf1fe08234a9e8fe47",
+      "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+      "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+      "author": "RutgerMuller"
+    },
+    {
+      "key": "gear",
+      "page": "https://freesound.org/people/UnplugTheFridge/sounds/529222/",
+      "preview": "https://cdn.freesound.org/previews/529/529222_1138214-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "inputFormat": "Prévia pública MP3; não master original",
+      "inputSha256": "3ff61923fc614652ac1c21bc7853b56da918374df05bf06e1d7cd98cab068ac5",
+      "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+      "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+      "author": "UnplugTheFridge"
+    },
+    {
+      "key": "grass",
+      "page": "https://freesound.org/people/alegemaate/sounds/364712/",
+      "preview": "https://cdn.freesound.org/previews/364/364712_2531187-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "inputFormat": "Prévia pública MP3; não master original",
+      "inputSha256": "d2d3c13de555f3c61dfbcff1b1dc01414ce718870e1aeef0b4a82ee5959507e1",
+      "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+      "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+      "author": "Allan Legemaate (alegemaate)"
+    },
+    {
+      "key": "gravel_brake",
+      "page": "https://freesound.org/people/kyles/sounds/637161/",
+      "preview": "https://cdn.freesound.org/previews/637/637161_612689-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "inputFormat": "Prévia pública MP3; não master original",
+      "inputSha256": "a116ebdca571da0b897d6baf183d01dfa7a0ca02e073c1dbdc905d3bd2ddfb38",
+      "edits": "Mono PCM16/48kHz, filtros e ganho; loops com crossfade (grama/pneu). Marchas: recorte automático de transiente mais energético; mesmo mecanismo em duas durações.",
+      "limitations": "Captação de rua ou foley real; não gravação de slick/câmbio F1.",
+      "author": "kyles"
+    }
+  ],
+  "phase8": {
+    "manifest": "fontes-parte-8.json",
+    "description": "Edited user-authorized onboard recording; three 7.92s alternate recorded textures, no oscillators or generated combustion",
+    "engineReady": false
+  }
+}

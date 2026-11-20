@@ -1,0 +1,35 @@
+{
+  "phase": 8,
+  "date": "2026-11-18",
+  "tests": {
+    "total": 68,
+    "passed": 68,
+    "failed": 0
+  },
+  "lint": true,
+  "build": true,
+  "checkGeom": true,
+  "checkScenery": true,
+  "gltfErrors": 0,
+  "gltfWarnings": 0,
+  "nativeBlenderReopened": true,
+  "embeddedImages": 8,
+  "runtimeModelReady": true,
+  "runtimeTriangles": 59013,
+  "visualWheelbaseMeters": 3.6,
+  "physicsWheelbaseMeters": 3.6,
+  "decodedAudioBytes": 11736928,
+  "onboardTakeSeconds": 7.92,
+  "engineReady": false,
+  "otherRecordedSoundsPreserved": true,
+  "interlagosLegacyUnsafeFootprints": 3,
+  "currentUnsafeFootprints": 0,
+  "modelSha256": "59b5a25b46006aab82e064894173facb97849c1da3e62360552f3112335a5f11",
+  "blendSha256": "35d65a26e811f3077f023730b516b5027e234539aea7d157fe42f897caa5936a",
+  "remaining": [
+    "Pilot is a refined prototype, not a measured team car or complete 2026 rules conversion",
+    "Engine source RPM/era remains unverified; perceptual realism still needs user listening",
+    "Full car-to-car collision unification and AI pace calibration remain pending",
+    "Main bundle still above 500kB; instantaneous FPS is not sustained performance proof"
+  ]
+}

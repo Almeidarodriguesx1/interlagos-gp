@@ -1,0 +1,29 @@
+{
+  "phase": 7,
+  "date": "2026-11-18",
+  "tests": {
+    "total": 63,
+    "passed": 63,
+    "failed": 0
+  },
+  "lint": true,
+  "build": true,
+  "checkGeom": true,
+  "audioAssetsIdentical": true,
+  "trackSamplesIdentical": true,
+  "browserVisualPass": true,
+  "browserLifecyclePass": true,
+  "glbReloadPass": true,
+  "softwareSmokePass": true,
+  "modelBytes": 2191264,
+  "modelSha256": "263b821ce1857b1860d42aa4a394ec08a13297680c40c52e0f8b051d64627f67",
+  "limitations": [
+    "2D empirical impulse and damage model, no structural deformation or rollovers",
+    "Old car-to-car hull remains separate from extended scenery hull",
+    "Buildings/trees outside continuous walls have no individual accessible collider",
+    "Pilot is a procedural prototype, not a team replica; visual 3.10m vs physical 3.60m wheelbase still pending",
+    "Apple M5 FPS sample is frozen/cadence limited, not a sustained gameplay benchmark",
+    "SwiftShader rendered with no JS exception but observed 1 FPS in short smoke test",
+    "Main JS bundle remains above 500kB; conservative AI pace and full 2026 conversion pending"
+  ]
+}

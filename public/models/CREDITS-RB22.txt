@@ -1,0 +1,7 @@
+2026 Redbull RB22 — Tyler_Dave (Sketchfab), CC BY 4.0.
+https://creativecommons.org/licenses/by/4.0/
+Source: F1-main/models/rb22.glb, distributed with F1-main/models/CREDITS.md.
+Interlagos adaptations: extraction of cockpit components, updated materials and textures, simplified nearby rival body, separate animated wheel pivots and driver equipment.
+
+McLaren papaya study: F1 2026 concept (polygon model), Qvist Designs, CC BY 4.0, https://qvistdesigns.framer.website/ . LibreCorsa f12026 conversion with AM26 steering wheel, papaya materials, animated wheels, game cockpit and telemetry integration. A concept adaptation.
+Steering wheel source: AM26 by DeX, CC BY 4.0. Wheel display UV remapped for simulator telemetry.

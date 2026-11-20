@@ -1,0 +1,6 @@
+[
+  {
+    "trackId":"interlagos","start":0.119,"end":0.148,"side":"right","minOffset":2.0,"maxOffset":6.95,
+    "material":"grass","validation":"confirmed","reference":"GeoSampa LiDAR colorizado 2020, T3 lado externo, estacoes 465 a 590 do modelo Blender. Limites conservadores estimados por imagem."
+  }
+]

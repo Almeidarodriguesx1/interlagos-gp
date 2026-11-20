@@ -1,0 +1,73 @@
+{
+  "name": "MCL40 refined mechanical study",
+  "version": "0.2.0",
+  "source": {
+    "kind": "AI-assisted parametric Blender modeling and local refinement",
+    "officialCAD": false,
+    "references": "references/sources.json"
+  },
+  "license": "Local model/scripts for requested personal project; third-party visual references and marks separately recorded.",
+  "technical_checks_passed": true,
+  "visual_approval_pending": true,
+  "integratedIntoRace": true,
+  "selection": "?car=mcl40",
+  "triangles": 150744,
+  "boundsMeters": [
+    1.8993468284606934,
+    1.1364999692887068,
+    4.795000076293945
+  ],
+  "geometry": {
+    "wheelbaseM": 3.4,
+    "frontAxleZ": 1.7,
+    "rearAxleZ": -1.7,
+    "frontHalfTrackM": 0.79,
+    "rearHalfTrackM": 0.75,
+    "wheelRadiusM": 0.363
+  },
+  "suspensionLinks": 24,
+  "maxMeasuredEndpointErrorM": 7.105427357601002e-14,
+  "files": [
+    {
+      "path": "MCL40-refinado-v02.blend",
+      "bytes": 1270327,
+      "sha256": "31d37550dfbdca46c08ddbe77d0af68b9c0ad9710ee88d3c4dde29d8e260521b"
+    },
+    {
+      "path": "exports/mcl40-study.glb",
+      "bytes": 4075108,
+      "sha256": "2d0a35c97858b8d6e48b105543dfcb44f76061275a21652ff92e47bd484ca036"
+    },
+    {
+      "path": "exports/mcl40-runtime.glb",
+      "bytes": 3849792,
+      "sha256": "67a0fdeb1654a3b1e4d5dea78a4d656314d46ef1aebfa6efbc50fb29d057f8b8"
+    }
+  ],
+  "checks": {
+    "lint": true,
+    "testsPassed": 70,
+    "build": true,
+    "checkGeom": true,
+    "checkScenery": true,
+    "browserPass": true,
+    "lifecycleMemoryStable": true,
+    "normalModePreserved": {
+      "source": "Blender",
+      "ready": true,
+      "originalPhysics": true
+    },
+    "gpu": "Apple M5 / ANGLE Metal",
+    "performance": "Browser smoke test and resource counters; not a sustained full-race FPS certification.",
+    "mcl40-study": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 296
+    },
+    "mcl40-runtime": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 272
+    }
+  }
+}

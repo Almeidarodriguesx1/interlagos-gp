@@ -1,0 +1,125 @@
+{
+  "scene": "Interlagos, race start, T-Cam, frozen simulation, 1280x800, production build",
+  "before": [
+    {
+      "stats": {
+        "fps": 60,
+        "physicsHz": 180,
+        "physicsSteps": 2,
+        "physicsDroppedSeconds": 0,
+        "calls": 1408,
+        "triangles": 1067444,
+        "camera": "tcam",
+        "track": "interlagos",
+        "near": 0.14,
+        "fov": 60.53646875322615
+      },
+      "frameIntervalMeanMs": 16.59666666686535,
+      "frameIntervalP95Ms": 16.700000000000273
+    },
+    {
+      "stats": {
+        "fps": 60,
+        "physicsHz": 180,
+        "physicsSteps": 2,
+        "physicsDroppedSeconds": 0,
+        "calls": 1408,
+        "triangles": 1067444,
+        "camera": "tcam",
+        "track": "interlagos",
+        "near": 0.14,
+        "fov": 60.53646875322615
+      },
+      "frameIntervalMeanMs": 16.599999999933775,
+      "frameIntervalP95Ms": 16.799999999999727
+    },
+    {
+      "stats": {
+        "fps": 60,
+        "physicsHz": 180,
+        "physicsSteps": 2,
+        "physicsDroppedSeconds": 0,
+        "calls": 1408,
+        "triangles": 1067444,
+        "camera": "tcam",
+        "track": "interlagos",
+        "near": 0.14,
+        "fov": 60.53646875322615
+      },
+      "frameIntervalMeanMs": 16.59333333333333,
+      "frameIntervalP95Ms": 16.700000000000728
+    }
+  ],
+  "after": [
+    {
+      "stats": {
+        "fps": 60,
+        "physicsHz": 180,
+        "physicsSteps": 3,
+        "physicsDroppedSeconds": 0,
+        "calls": 1431,
+        "triangles": 1202062,
+        "camera": "tcam",
+        "track": "interlagos",
+        "near": 0.14,
+        "fov": 60.53648511760594
+      },
+      "frameIntervalMeanMs": 16.627777777645324,
+      "frameIntervalP95Ms": 16.700000000000273
+    },
+    {
+      "stats": {
+        "fps": 60,
+        "physicsHz": 180,
+        "physicsSteps": 3,
+        "physicsDroppedSeconds": 0,
+        "calls": 1431,
+        "triangles": 1202062,
+        "camera": "tcam",
+        "track": "interlagos",
+        "near": 0.14,
+        "fov": 60.53648511760594
+      },
+      "frameIntervalMeanMs": 16.59666666640176,
+      "frameIntervalP95Ms": 16.799999999999727
+    },
+    {
+      "stats": {
+        "fps": 60,
+        "physicsHz": 180,
+        "physicsSteps": 3,
+        "physicsDroppedSeconds": 0,
+        "calls": 1431,
+        "triangles": 1202062,
+        "camera": "tcam",
+        "track": "interlagos",
+        "near": 0.14,
+        "fov": 60.53648511760594
+      },
+      "frameIntervalMeanMs": 16.586666666600436,
+      "frameIntervalP95Ms": 16.700000000000728
+    }
+  ],
+  "exceptions": [],
+  "details": {
+    "counts": {
+      "stands": 4,
+      "spectators": 2980,
+      "crowdSheets": 0,
+      "tufts": 5489,
+      "pilotKits": 1
+    },
+    "memory": {
+      "geometries": 141,
+      "textures": 36
+    },
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+    "scenery": 24,
+    "lighting": {
+      "environment": true,
+      "shadowMap": true
+    },
+    "carDamage": 0
+  },
+  "pass": true
+}

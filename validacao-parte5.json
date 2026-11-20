@@ -1,0 +1,19 @@
+{
+  "tests": {
+    "passed": 49,
+    "failed": 0
+  },
+  "lint": "pass",
+  "build": "pass",
+  "geometry": "pass",
+  "audioBrowser": true,
+  "uiBrowser": true,
+  "decodedBytes48k": 7347808,
+  "kerbSha256": "bbf2994de622d67280d36026d219e7da8acf0728cd8d47b2ee7bd6550d3032e8",
+  "knownLimits": [
+    "Onboard experimental: RPM/era unknown; auditory approval pending",
+    "No starter recording or wet tire/spray bank",
+    "Software rendering remains slow",
+    "Full curvature/braking calibration and Blender asset remain next phases"
+  ]
+}

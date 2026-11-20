@@ -1,0 +1,6 @@
+{
+  "name": "Interlagos GP — F1 Simulator",
+  "description": "Simulador 3D realista de Fórmula 1 em Interlagos com física V6 Turbo Híbrida, multicâmeras, oponentes de IA e áudio procedural no navegador.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

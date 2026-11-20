@@ -1,0 +1,21 @@
+{
+  "p50ms": 16.699999999999818,
+  "p95ms": 16.799999999999727,
+  "weather": "dry",
+  "cars": 22,
+  "stats": {
+    "fps": 60,
+    "physicsHz": 180,
+    "physicsSteps": 498,
+    "physicsDroppedSeconds": 0.17777777777777778,
+    "calls": 1474,
+    "triangles": 1077904,
+    "camera": "tcam",
+    "track": "interlagos",
+    "near": 0.14,
+    "fov": 64.05047033468861
+  },
+  "transferBytes": 60512932,
+  "exceptions": [],
+  "httpErrors": []
+}

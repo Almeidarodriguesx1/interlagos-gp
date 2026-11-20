@@ -1,0 +1,44 @@
+{
+  "modelBytes": 2191264,
+  "memory": [
+    {
+      "geometries": 141,
+      "textures": 40
+    },
+    {
+      "geometries": 141,
+      "textures": 40
+    },
+    {
+      "geometries": 141,
+      "textures": 40
+    }
+  ],
+  "initial": {
+    "running": true,
+    "starting": false,
+    "manual": false,
+    "gear": 1
+  },
+  "off": {
+    "running": false,
+    "starting": false,
+    "manual": false,
+    "gear": 1
+  },
+  "manual": {
+    "running": false,
+    "starting": false,
+    "manual": true,
+    "gear": 2
+  },
+  "damageHUD": true,
+  "fallen": true,
+  "ui": {
+    "rain": true,
+    "rivals": true,
+    "sliders": 10
+  },
+  "exceptions": [],
+  "pass": true
+}

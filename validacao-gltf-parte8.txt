@@ -1,0 +1,394 @@
+
+ ERROR
+ ────────────────────────────────────────────
+info: No errors found.
+
+
+
+ WARNING
+ ────────────────────────────────────────────
+info: No warnings found.
+
+
+
+ INFO
+ ────────────────────────────────────────────
+┌─────────────────────┬───────────────────────────────────────────────────────────────────┬──────────┬────────────────────────────────────────────────┐
+│ code                │ message                                                           │ severity │ pointer                                        │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/1/primitives/0/attributes/TANGENT      │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/1/primitives/0/attributes/TEXCOORD_0   │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/2/primitives/0/attributes/TANGENT      │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/2/primitives/0/attributes/TEXCOORD_0   │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/3/primitives/0/attributes/TANGENT      │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/3/primitives/0/attributes/TEXCOORD_0   │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/4/primitives/0/attributes/TANGENT      │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/4/primitives/0/attributes/TEXCOORD_0   │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/5/primitives/0/attributes/TANGENT      │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/5/primitives/0/attributes/TEXCOORD_0   │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/6/primitives/0/attributes/TANGENT      │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/6/primitives/0/attributes/TEXCOORD_0   │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/9/primitives/0/attributes/TANGENT      │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/9/primitives/0/attributes/TEXCOORD_0   │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/10/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/12/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/12/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/13/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/13/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/15/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/15/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/16/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/16/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/17/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/17/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/20/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/20/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/22/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/22/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/23/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/23/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/26/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/26/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/27/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/27/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/37/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/37/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/38/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/38/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/39/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/39/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/40/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/40/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/41/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/41/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/42/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/42/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/45/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/45/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/46/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/46/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/48/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/48/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/49/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/49/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/50/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/50/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/51/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/51/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/52/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/52/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/53/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/53/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/54/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/54/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/55/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/55/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/56/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/56/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/57/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/57/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/58/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/58/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/60/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/60/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/61/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/61/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/62/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/62/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/63/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/63/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/64/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/64/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/65/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/65/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/66/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/66/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/67/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/67/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/68/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/68/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/69/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/69/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/70/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/70/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/71/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/71/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/72/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/72/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/73/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/73/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/74/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/74/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/75/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/77/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/77/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/78/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/78/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/79/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/79/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/81/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/81/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/82/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/82/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/83/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/83/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/85/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/85/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/86/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/86/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/87/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/87/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/88/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/88/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/89/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/89/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/90/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/90/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/91/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/91/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/92/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/92/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/93/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/93/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/94/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/94/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/95/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/95/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/97/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/98/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/98/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/99/primitives/0/attributes/TANGENT     │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/99/primitives/0/attributes/TEXCOORD_0  │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/100/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/100/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/101/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/101/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/102/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/102/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/104/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/105/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/105/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/106/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/106/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/107/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/107/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/108/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/108/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/109/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/109/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/111/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/112/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/112/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/113/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/113/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/114/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/114/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/115/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/115/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/116/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/116/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/118/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/119/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/119/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/120/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/120/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/121/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/121/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/122/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/122/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_MESH_TANGENT │ Tangents are not used because the material has no normal texture. │ 2        │ /meshes/123/primitives/0/attributes/TANGENT    │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ UNUSED_OBJECT       │ This object may be unused.                                        │ 2        │ /meshes/123/primitives/0/attributes/TEXCOORD_0 │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ NODE_EMPTY          │ Empty node encountered.                                           │ 2        │ /nodes/0                                       │
+├─────────────────────┼───────────────────────────────────────────────────────────────────┼──────────┼────────────────────────────────────────────────┤
+│ NODE_EMPTY          │ Empty node encountered.                                           │ 2        │ /nodes/110                                     │
+└─────────────────────┴───────────────────────────────────────────────────────────────────┴──────────┴────────────────────────────────────────────────┘
+
+
+
+ HINT
+ ────────────────────────────────────────────
+info: No hints found.
+
+

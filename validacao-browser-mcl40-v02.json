@@ -1,0 +1,88 @@
+{
+  "source": "McLaren MCL40 study v0.2",
+  "inspection": {
+    "triangles": 150744,
+    "size": [
+      1.8993468284606934,
+      1.1364999692887068,
+      4.795000076293945
+    ],
+    "missing": []
+  },
+  "geometry": {
+    "wheelbaseM": 3.4,
+    "frontAxleZ": 1.7,
+    "rearAxleZ": -1.7,
+    "frontHalfTrackM": 0.79,
+    "rearHalfTrackM": 0.75,
+    "wheelRadiusM": 0.363
+  },
+  "visualWheelbase": 3.4000000953674316,
+  "suspensionLinks": 24,
+  "maxLinkError": 7.105427357601002e-14,
+  "fixedUpright": true,
+  "canvasScreen": true,
+  "screenFlipY": false,
+  "liveTelemetry": true,
+  "activeAero": true,
+  "papayaColor": "ff6f0a",
+  "stats": {
+    "fps": 58,
+    "physicsHz": 180,
+    "physicsSteps": 26,
+    "physicsDroppedSeconds": 0,
+    "calls": 1625,
+    "triangles": 1364738,
+    "camera": "cockpit",
+    "track": "interlagos",
+    "near": 0.14,
+    "fov": 62.14735470213435
+  },
+  "memory": {
+    "geometries": 249,
+    "textures": 39
+  },
+  "debugKeys": [
+    "setCamera",
+    "setTrack",
+    "freeze",
+    "getStats",
+    "scene",
+    "renderer",
+    "camera",
+    "getSession",
+    "getPilotVisual",
+    "exportPilot"
+  ],
+  "lifecycle": {
+    "samples": [
+      {
+        "geometry": 249,
+        "textures": 41,
+        "wheelbase": 3.4,
+        "sameVisual": true
+      },
+      {
+        "geometry": 249,
+        "textures": 41,
+        "wheelbase": 3.4,
+        "sameVisual": true
+      },
+      {
+        "geometry": 249,
+        "textures": 41,
+        "wheelbase": 3.4,
+        "sameVisual": true
+      }
+    ],
+    "stable": true
+  },
+  "defaultPilot": {
+    "source": "Blender",
+    "ready": true,
+    "originalPhysics": true
+  },
+  "exceptions": [],
+  "httpErrors": [],
+  "pass": true
+}

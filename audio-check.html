@@ -1,0 +1,33 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Verificação técnica do áudio</title><pre id="result">Executando comparação offline…</pre><script type="module">
+import {RecordedAudioEngine} from '/src/audio/RecordedAudioEngine.ts';
+async function capture(kind,id='engine_provisional',onboard=true){
+ const ctx=new OfflineAudioContext(2,96000,48000);ctx.resume=async()=>{};ctx.close=async()=>{};
+ Object.defineProperty(ctx,'state',{get:()=> 'running'});
+ window.AudioContext=function(){return ctx};
+ const engine=new RecordedAudioEngine();engine.init();
+ for(let i=0;i<1000&&engine.status.loading;i++)await new Promise(r=>setTimeout(r,10));
+ if(engine.status.loading)throw new Error('Tempo de carregamento excedido');
+ engine.selectMotor('engine_provisional');
+ if(kind==='preview')await engine.testAudio(id,onboard);
+ else{
+  if(kind==='mute')engine.setMuted(true);
+  engine.update({active:true,rpm:8500,gear:3,throttle:1,slipRatio:0,ersActive:false,onKerb:false,onTrack:true,wet:false,isOnboard:onboard,contacts:kind==='kerb'?[{wheel:'FL',side:-1,material:'kerb',grounded:true,speed:40,slip:0,load:1}]:kind==='brake'?[{wheel:'FL',side:-1,material:'asphalt',grounded:true,speed:40,slip:.6,load:1}]:[],brake:kind==='brake'?1:0,speedMs:kind==='kerb'||kind==='brake'?40:0});
+ }
+ const buffer=await ctx.startRendering();let energy=0,peak=0;const data=buffer.getChannelData(0);
+ const start=id.startsWith('gear')?0:19200,end=id.startsWith('gear')?12000:57600;
+ for(let i=start;i<end;i++){energy+=data[i]*data[i];peak=Math.max(peak,Math.abs(data[i]));}
+ const rms=Math.sqrt(energy/(end-start));
+ const status={engineReady:engine.status.engineReady,enginePlayable:engine.status.enginePlayable,engineMode:engine.status.engineMode,decodedBytes:engine.status.decodedBytes};engine.dispose();
+ return {rms,peak,db:20*Math.log10(Math.max(1e-12,rms)),status};
+}
+try{
+ const menu=await capture('preview'),cockpit=await capture('drive'),external=await capture('drive','engine_provisional',false),muted=await capture('mute');
+ const kerbDrive=await capture('kerb'),brakeDrive=await capture('brake');
+ const effects={};for(const id of ['asphalt','kerb_rumble','grass','gravel','tire_screech','gear_upshift','gear_downshift','gravel_brake'])effects[id]=await capture('preview',id);
+ // Short shift transients can finish before the measurement window: separately check buffer availability below.
+ const loops=Object.keys(effects);
+ const deltaDb=Math.abs(menu.db-cockpit.db);
+ const pass=deltaDb<1&&cockpit.rms>.001&&external.rms>.001&&muted.peak===0&&loops.every(id=>effects[id].rms>.0001)&&cockpit.status.decodedBytes<64*1024*1024&&kerbDrive.rms>cockpit.rms&&brakeDrive.rms>cockpit.rms;
+ document.querySelector('#result').textContent=JSON.stringify({pass,deltaDb,menu,cockpit,external,muted,kerbDrive,brakeDrive,effects},null,2);
+}catch(e){document.querySelector('#result').textContent=JSON.stringify({pass:false,error:String(e)});}
+</script></html>

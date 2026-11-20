@@ -1,0 +1,10 @@
+{
+  "oldLoopSeconds": 0.9,
+  "newTakeSeconds": 7.92,
+  "oldCorrelationAtLegacyPeriod": 1.0,
+  "newCorrelationAtLegacyPeriod": -0.021850592210518327,
+  "demoSteadyCorrelationAtLegacyPeriod": -0.0018609682608491751,
+  "demoPeakDbFS": -19.540037664990017,
+  "demoRmsDbFS": -34.426040575736096,
+  "note": "Measures recurrence of the former 0.9s whole-take loop; does not certify perceptual realism or original engine RPM"
+}
