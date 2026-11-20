@@ -42,13 +42,13 @@ public/models/r26-grid/r26-lod1.glb|1901572|46579|5|5|3 {'2048x512': 1, '1024x10
 public/models/r26-grid/r26-lod2.glb|610116|19469|2|5|0 {}
 public/models/r26-grid/r26-lod3.glb|252744|7534|2|5|0 {}
 public/models/r26-study.glb|4005376|134835|27|411|5 {'512x512': 1, '2048x512': 1, '512x256': 1, '1024x1024': 1}
-public/models/rb22-donor.glb|3834668|280939|23|30|21 {'image/webp': 21}
+public/models/rb22-donor.glb|3834668|280939|23|30|21 512x512, 512x512, 1024x1024, 1024x1024, 128x128, 128x128, 128x128, 1024x1024, 512x512, 512x512, 128x64, 1024x1024, 64x64, 1024x1024, 1024x1024, 1024x1024, 1024x1024, 1024x1024, 32x32, 256x256, 1024x1024
 public/models/rb22-grid/rb22-lod1.glb|4959612|66783|24|29|16 {'1024x1024': 1, '512x512': 10, '128x128': 3, '256x256': 1, '128x64': 1, '32x32': 1}
 public/models/rb22-grid/rb22-lod2.glb|590548|18849|2|5|0 {}
 public/models/rb22-grid/rb22-lod3.glb|244572|7312|2|5|0 {}
 public/models/rb22-v01.glb|5133948|134612|26|380|7 {'512x512': 1, '2048x1024': 1, '512x256': 1, '1024x1024': 2, '256x256': 1, '128x128': 1}
 public/models/s1-foliage-credits.json|904
-public/models/s1-shrub.glb|2199416|2199|3|1|3 {'image/webp': 3}
+public/models/s1-shrub.glb|2199416|2199|3|1|3 1024x1024, 1024x1024, 1024x1024
 public/models/sf26-grid/sf26-lod1.glb|1925244|45821|4|5|2 {'2048x1024': 1, '1024x1024': 1}
 public/models/sf26-grid/sf26-lod2.glb|589572|18847|2|5|0 {}
 public/models/sf26-grid/sf26-lod3.glb|244188|7314|2|5|0 {}

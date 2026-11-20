@@ -1,0 +1,14 @@
+
+> react-example@0.0.0 verify:models
+> tsx scripts/verify-models.ts && tsx --test src/engine/blenderPilot.test.ts
+
+Modelos em bytes 50228195
+✔ Blender runtime asset preserves named controls, embedded images and the current physical wheelbase (3.752541ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 234.722833

@@ -1,0 +1,9 @@
+monza { geometries: 356, textures: 120 }
+spa { geometries: 356, textures: 122 }
+interlagos { geometries: 361, textures: 129 }
+monza { geometries: 356, textures: 122 }
+spa { geometries: 356, textures: 122 }
+interlagos { geometries: 361, textures: 129 }
+monza { geometries: 356, textures: 122 }
+spa { geometries: 356, textures: 122 }
+interlagos { geometries: 361, textures: 129 }

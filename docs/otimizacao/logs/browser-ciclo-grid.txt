@@ -1,0 +1,144 @@
+monza { geometries: 372, textures: 127 }
+spa { geometries: 360, textures: 131 }
+interlagos { geometries: 330, textures: 130 }
+monza { geometries: 372, textures: 135 }
+spa { geometries: 360, textures: 137 }
+interlagos { geometries: 330, textures: 136 }
+monza { geometries: 372, textures: 141 }
+spa { geometries: 360, textures: 143 }
+interlagos { geometries: 330, textures: 142 }
+mcl40 {
+  ready: true,
+  source: 'McLaren MCL40 · estudo v0.2',
+  inspection: {
+    triangles: 150822,
+    size: [ 1.89935302734375, 1.1364926397800446, 4.795013427734375 ],
+    missing: []
+  }
+}
+sf26 {
+  ready: true,
+  source: 'Ferrari SF-26 · estudo',
+  inspection: {
+    triangles: 133143,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+rb22 {
+  ready: true,
+  source: 'Red Bull RB22 · estudo',
+  inspection: {
+    triangles: 152412,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+w17 {
+  ready: true,
+  source: 'Mercedes W17 · estudo',
+  inspection: {
+    triangles: 134985,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.795024394989014 ],
+    missing: []
+  }
+}
+amr26 {
+  ready: true,
+  source: 'Aston Martin AMR26 · estudo',
+  inspection: {
+    triangles: 150903,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+fw48 {
+  ready: true,
+  source: 'Williams FW48 · estudo',
+  inspection: {
+    triangles: 130959,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+vf26 {
+  ready: true,
+  source: 'Haas VF-26 · estudo',
+  inspection: {
+    triangles: 131104,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+a526 {
+  ready: true,
+  source: 'Alpine A526 · estudo',
+  inspection: {
+    triangles: 131271,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+vcarb03 {
+  ready: true,
+  source: 'Racing Bulls VCARB 03 · estudo',
+  inspection: {
+    triangles: 131968,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+r26 {
+  ready: true,
+  source: 'Audi R26 · estudo',
+  inspection: {
+    triangles: 134835,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+mac26 {
+  ready: true,
+  source: 'Cadillac MAC-26 · estudo',
+  inspection: {
+    triangles: 134742,
+    size: [ 1.8988037109375, 1.1364926397800446, 4.790019512176514 ],
+    missing: []
+  }
+}
+pilot {
+  ready: true,
+  source: 'Blender',
+  inspection: {
+    triangles: 59013,
+    size: [ 2.0070031881332397, 1.0975458460716123, 5.007078317285297 ],
+    missing: []
+  }
+}
+Console (agrupado por origem)
+{
+  "audio/engine_idle.wav": 12,
+  "audio/engine_low.wav": 12,
+  "audio/engine_mid.wav": 12,
+  "audio/engine_low.ogg": 12,
+  "audio/engine_idle.ogg": 12,
+  "audio/engine_mid.ogg": 12,
+  "audio/engine_high.wav": 12,
+  "audio/engine_limiter.wav": 12,
+  "audio/engine_off_throttle.wav": 12,
+  "audio/engine_high.ogg": 12,
+  "audio/engine_limiter.ogg": 12,
+  "audio/engine_off_throttle.ogg": 12,
+  "audio/dirt.wav": 12,
+  "audio/dirt.ogg": 12,
+  "audio/water.wav": 12,
+  "audio/water.ogg": 12,
+  "audio/wind_aero.wav": 12,
+  "audio/wind_aero.ogg": 12,
+  "audio/collision_carbon.wav": 12,
+  "audio/collision_carbon.ogg": 12,
+  "audio/race_start.wav": 12,
+  "audio/race_start.ogg": 12,
+  "audio/record.wav": 12,
+  "audio/record.ogg": 12
+}
