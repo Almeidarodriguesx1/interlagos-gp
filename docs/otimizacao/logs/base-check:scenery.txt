@@ -1,0 +1,292 @@
+
+> react-example@0.0.0 check:scenery
+> tsx scripts/check-scenery.ts
+
+{
+  "method": "Conservative complete-footprint clearance against road/apron/barrier corridor, sampled at track resolution with additional 2m margin. Decorative placements are not surveyed real locations.",
+  "pass": true,
+  "rows": [
+    {
+      "circuit": "interlagos",
+      "legacyUnsafeFootprints": [
+        {
+          "index": 0,
+          "clearance": -2.915816828109647
+        },
+        {
+          "index": 45,
+          "clearance": -0.5239946353453773
+        },
+        {
+          "index": 48,
+          "clearance": -13.205382404966013
+        }
+      ],
+      "currentMinimumClearance": 1.0841654216013348,
+      "structures": [
+        {
+          "rootX": 7.446845052617551,
+          "rootZ": 324.2039892026873,
+          "x": 8.686518724016745,
+          "z": 323.3594720693859,
+          "yaw": -2.5435675485445173,
+          "halfX": 9.2,
+          "halfZ": 84.2,
+          "localCenterX": -1.5,
+          "length": 166,
+          "kind": "pit",
+          "groundTop": 38.04780903551759
+        },
+        {
+          "rootX": 91.36366469891232,
+          "rootZ": 340.4160532521437,
+          "x": 92.357970053553,
+          "z": 339.74422227508705,
+          "yaw": -2.5473768543349284,
+          "halfX": 8.6,
+          "halfZ": 57.2,
+          "localCenterX": -1.2,
+          "length": 112,
+          "kind": "stand",
+          "groundTop": 34.54239371251428
+        },
+        {
+          "rootX": 9.962287845126912,
+          "rootZ": 85.99934281786435,
+          "x": 11.159039414632383,
+          "z": 85.91110631245876,
+          "yaw": -3.0679958109181373,
+          "halfX": 8.6,
+          "halfZ": 47.2,
+          "localCenterX": -1.2,
+          "length": 92,
+          "kind": "stand",
+          "groundTop": 40.69602995229973
+        },
+        {
+          "rootX": -87.63465263633523,
+          "rootZ": -204.60021020836476,
+          "x": -88.81992753077137,
+          "z": -204.41279776315528,
+          "yaw": 0.1568190018257849,
+          "halfX": 8.6,
+          "halfZ": 42.2,
+          "localCenterX": -1.2,
+          "length": 82,
+          "kind": "stand",
+          "groundTop": 42.2416297307018
+        },
+        {
+          "rootX": 33.92902350433525,
+          "rootZ": 607.5976215725905,
+          "x": 33.416451921004246,
+          "z": 608.682642481127,
+          "yaw": 1.1294656870934587,
+          "halfX": 8.6,
+          "halfZ": 45.2,
+          "localCenterX": -1.2,
+          "length": 88,
+          "kind": "stand",
+          "groundTop": 14.232019303286709
+        },
+        {
+          "rootX": -665.3452978939914,
+          "rootZ": -143.41050973120335,
+          "x": -666.4781687848366,
+          "z": -143.80624138861236,
+          "yaw": -0.3360666958252955,
+          "halfX": 8.6,
+          "halfZ": 37.2,
+          "localCenterX": -1.2,
+          "length": 72,
+          "kind": "stand",
+          "groundTop": 11.927465273684374
+        },
+        {
+          "rootX": -366.38700623430094,
+          "rootZ": 236.16327880228536,
+          "x": -367.4831161969695,
+          "z": 236.65168739121341,
+          "yaw": 0.41917515484222045,
+          "halfX": 8.6,
+          "halfZ": 32.2,
+          "localCenterX": -1.2,
+          "length": 62,
+          "kind": "stand",
+          "groundTop": 12.65206081258825
+        },
+        {
+          "rootX": -36.90043189349089,
+          "rootZ": 590.9706800695426,
+          "x": -37.6687470812822,
+          "z": 591.8924673401258,
+          "yaw": 0.8759561787126183,
+          "halfX": 8.6,
+          "halfZ": 33.2,
+          "localCenterX": -1.2,
+          "length": 64,
+          "kind": "stand",
+          "groundTop": 10.67627372252483
+        }
+      ]
+    },
+    {
+      "circuit": "monza",
+      "legacyUnsafeFootprints": [
+        {
+          "index": 0,
+          "clearance": -3.848702499844049
+        }
+      ],
+      "currentMinimumClearance": 0.15129730951867426,
+      "structures": [
+        {
+          "rootX": -30.674720211573874,
+          "rootZ": 462.15141487458715,
+          "x": -29.174786340953535,
+          "z": 462.1654997517926,
+          "yaw": 3.132202597461643,
+          "halfX": 9.2,
+          "halfZ": 84.2,
+          "localCenterX": -1.5,
+          "length": 166,
+          "kind": "pit",
+          "groundTop": 0.49284294300711173
+        },
+        {
+          "rootX": 29.082480585144577,
+          "rootZ": 522.9940244989185,
+          "x": 30.282363284128934,
+          "z": 523.0108027192657,
+          "yaw": 3.1276103477034494,
+          "halfX": 8.6,
+          "halfZ": 57.2,
+          "localCenterX": -1.2,
+          "length": 112,
+          "kind": "stand",
+          "groundTop": 0.41846374440794065
+        },
+        {
+          "rootX": 29.64092041394214,
+          "rootZ": 233.23793973361325,
+          "x": 30.840919479475613,
+          "z": 233.23943730457844,
+          "yaw": 3.1403446774615125,
+          "halfX": 8.6,
+          "halfZ": 47.2,
+          "localCenterX": -1.2,
+          "length": 92,
+          "kind": "stand",
+          "groundTop": 0.7957603423571041
+        },
+        {
+          "rootX": -31.34143471308009,
+          "rootZ": -66.64626361280372,
+          "x": -32.54115111943296,
+          "z": -66.62017636826234,
+          "yaw": 0.021741083153991703,
+          "halfX": 8.6,
+          "halfZ": 42.2,
+          "localCenterX": -1.2,
+          "length": 82,
+          "kind": "stand",
+          "groundTop": 1.290962604319939
+        },
+        {
+          "rootX": 33.794688289925986,
+          "rootZ": 850.9957143506487,
+          "x": 34.99078431422027,
+          "z": 850.8989967169545,
+          "yaw": -3.060907108072163,
+          "halfX": 8.6,
+          "halfZ": 45.2,
+          "localCenterX": -1.2,
+          "length": 88,
+          "kind": "stand",
+          "groundTop": 0.05288457810442679
+        }
+      ]
+    },
+    {
+      "circuit": "spa",
+      "legacyUnsafeFootprints": [
+        {
+          "index": 0,
+          "clearance": -2.6884330557615828
+        },
+        {
+          "index": 1,
+          "clearance": -7.058230524186144
+        }
+      ],
+      "currentMinimumClearance": 1.3114924647683806,
+      "structures": [
+        {
+          "rootX": -19.815272545246827,
+          "rootZ": 443.1091843855918,
+          "x": -18.341549724744205,
+          "z": 442.8296471817534,
+          "yaw": -2.9541386199000126,
+          "halfX": 9.2,
+          "halfZ": 84.2,
+          "localCenterX": -1.5,
+          "length": 166,
+          "kind": "pit",
+          "groundTop": 41.80998012486388
+        },
+        {
+          "rootX": 62.12366091388529,
+          "rootZ": 476.57042128431976,
+          "x": 63.1979669774201,
+          "z": 476.035756452998,
+          "yaw": -2.6797996407648412,
+          "halfX": 8.6,
+          "halfZ": 57.2,
+          "localCenterX": -1.2,
+          "length": 112,
+          "kind": "stand",
+          "groundTop": 39.705417737341385
+        },
+        {
+          "rootX": 20.030492850121654,
+          "rootZ": 207.92961031057052,
+          "x": 21.230000408431366,
+          "z": 207.89523564609402,
+          "yaw": -3.112943180809154,
+          "halfX": 8.6,
+          "halfZ": 47.2,
+          "localCenterX": -1.2,
+          "length": 92,
+          "kind": "stand",
+          "groundTop": 42.846380117853464
+        },
+        {
+          "rootX": -55.71364919274046,
+          "rootZ": -88.36154357869138,
+          "x": -56.90256879542494,
+          "z": -88.19884699497624,
+          "yaw": 0.1359993354144473,
+          "halfX": 8.6,
+          "halfZ": 42.2,
+          "localCenterX": -1.2,
+          "length": 82,
+          "kind": "stand",
+          "groundTop": 43.56347638329842
+        },
+        {
+          "rootX": 291.4078256474582,
+          "rootZ": 688.3348852690542,
+          "x": 292.16752919445906,
+          "z": 687.405987793186,
+          "yaw": -2.256330104731281,
+          "halfX": 8.6,
+          "halfZ": 45.2,
+          "localCenterX": -1.2,
+          "length": 88,
+          "kind": "stand",
+          "groundTop": 25.782690626227787
+        }
+      ]
+    }
+  ]
+}

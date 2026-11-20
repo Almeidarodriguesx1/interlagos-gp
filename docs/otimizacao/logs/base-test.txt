@@ -1,0 +1,132 @@
+
+> react-example@0.0.0 test
+> tsx --test src/sim/sim.test.ts src/sim/surfaces.test.ts src/sim/part5.test.ts src/audio/audio.test.ts src/sim/dynamics.test.ts src/sim/collisions.test.ts src/engine/details.test.ts src/audio/onboardTuning.test.ts src/engine/sceneryPlacement.test.ts src/engine/blenderPilot.test.ts src/engine/mcl40Pilot.test.ts src/engine/vehicleStudies.test.ts
+
+[Áudio gravado] {
+  loaded: [ 'engine_provisional', 'asphalt', 'kerb_rumble', 'gravel' ],
+  missing: [
+    'engine_idle',         'engine_low',
+    'engine_mid',          'engine_high',
+    'engine_limiter',      'engine_off_throttle',
+    'engine_onboard',      'engine_onboard_alt1',
+    'engine_onboard_alt2', 'rain_ambient',
+    'grass',               'dirt',
+    'water',               'tire_screech',
+    'wind_aero',           'gear_upshift',
+    'gear_downshift',      'gravel_brake',
+    'collision_carbon',    'countdown',
+    'race_start',          'record',
+    'crowd_stands',        'crowd_start',
+    'radio_start',         'engine_ext_on_7900',
+    'engine_ext_off_8500'
+  ],
+  engineReady: false,
+  decodedBytes: 1536000,
+  contacts: [],
+  loading: false,
+  errors: {},
+  engineIssues: [
+    'Motor aguardando aprovação',
+    'Origem do motor não informada',
+    'Licença do motor não informada',
+    'Amostra ausente: engine_idle',
+    'Amostra ausente: engine_low',
+    'Amostra ausente: engine_mid',
+    'Amostra ausente: engine_high',
+    'Amostra ausente: engine_limiter',
+    'Amostra ausente: engine_off_throttle'
+  ],
+  activeLoops: 0,
+  enginePlayable: true,
+  engineMode: 'recorded-provisional',
+  contextState: 'running',
+  playbackError: '',
+  motorRate: 1,
+  motorCutoff: 16000
+}
+✔ runoff asphalt does not trigger gravel, including asymmetric widths (6.214166ms)
+✔ explicit material zones wrap at start/finish and respect side (0.159ms)
+✔ engine crossfades retain constant energy across full RPM range (6.011541ms)
+✔ wheel sampling separates left kerb and right asphalt; airborne contacts are silent (1.27675ms)
+✔ recorded graph loads assets and silences loops on pause without synthesis (39.672292ms)
+✔ calibration rejects missing approval and invalid RPM; accepts complete ordered bands (0.794625ms)
+✔ original motor timbre is anchored at preview pitch and camera filtering stays bright (0.716917ms)
+✔ onboard responds continuously from idle to limiter instead of the former low-RPM plateau (1.234584ms)
+✔ recorded onboard texture transitions reuse storage and maintain a bounded equal-power mix (2.5135ms)
+✔ Blender runtime asset preserves named controls, embedded images and the current physical wheelbase (4.326542ms)
+✔ spectators are individual seated instances within tiers and beneath the roof (14.880291ms)
+✔ grass tufts stay outside the existing asphalt apron, use bounded instancing and have rooted transforms (595.723167ms)
+✔ pilot nose normals face outward and merged detail kit keeps the material budget (7.462666ms)
+✔ pilot bodywork has valid rounded shells and intake frames in three material batches (15.326583ms)
+✔ MCL40 player geometry agrees with exported axles and does not modify rivals or the normal session (10.58675ms)
+✔ optimized MCL40 retains both sides of every articulated link, camera anchors and fixed uprights (1.235959ms)
+✔ the full footprint of every pit, grandstand and skyline building clears each circuit (28.971042ms)
+✔ structure supports sample the rendered terrain and reach the foundation deck on sloping circuits (1399.771834ms)
+✔ every study preserves player-only geometry, HUD identity, unique grid numbers and restart settings (7.993458ms)
+✔ SF26 and RB22 axles and articulated link endpoints agree with their exported geometry (322.592ms)
+✔ new team cars have different nose, sidepod and engine-cover geometry, beyond paint changes (6.31125ms)
+✔ every pit prop rests on the foundation and stays clear of the closed garage fronts and track boundary (29.056292ms)
+✔ distance models fit triangle budgets and keep the four player wheel pivots (4.908958ms)
+✔ season grid seats, garage equipment and loadable wheel pivots cover every constructor (34.447625ms)
+✔ contact impulses dissipate energy, distinguish tangential scraping and rotate off-center impacts (3.409084ms)
+✔ swept disks catch thin posts at racing speed, including a full crossing in one step (7.331792ms)
+✔ lightweight signs yield with small momentum loss, fall and reset with a new session (1.45625ms)
+✔ wall contacts contain the full hull, with nose contact before the center crosses the wall (2.682083ms)
+✔ collision damage is bounded, reported in telemetry and repaired on session restart (3.432791ms)
+✔ aero damage lengthens braking distance through reduced aerodynamic load (23.582ms)
+✔ driving curvature recovers analytical circles without the legacy factor-of-two error (1.830333ms)
+✔ tire load sensitivity and combined forces obey a shared grip budget (0.227458ms)
+✔ steering while braking cannot rotate velocity for free beyond the tire force envelope (11.654041ms)
+✔ solo Interlagos pace is ordered, bounded and stays on asphalt for three laps at 180 Hz (3266.432ms)
+✔ ignition cuts RPM and traction, restart waits before delivering torque (12.238375ms)
+✔ manual gearbox stays in gear, shifts once, rejects unsafe reverse and overrev (0.770792ms)
+✔ slope gravity reverses in car coordinates, retains the same world downhill direction (4.120125ms)
+✔ pausing before first countdown step preserves countdown when resumed (1.206ms)
+✔ title demonstration never records the AI-driven player lap (3216.414041ms)
+✔ start preferences and climate changes isolate records and invalidate the current lap (0.458625ms)
+✔ an unpowered car rolls downhill in either orientation without throttle (0.8595ms)
+✔ Interlagos track spline matches real-world length (~4309 m) and ~43 m elevation span (1.521ms)
+✔ Interlagos defines 3 sectors, 2 DRS zones, and 8 TV trackside cameras (1.338583ms)
+✔ Track projection accurately finds centerline and off-track offsets (0.990334ms)
+✔ F1 car accelerates to 300+ km/h with 8-speed gearbox and benefits from DRS + ERS (21.024292ms)
+✔ Wet weather reduces cornering/braking deceleration vs dry weather (5.593917ms)
+✔ Race director runs 5-light FIA countdown, transitions to playing, and counts laps to finish (580.2075ms)
+✔ braking into a slow bend stops and holds the car on an incline until the pedal is released (10.632208ms)
+✔ Holding brake from standstill engages Reverse (-1) and throttle shifts back to 1st (2.465ms)
+✔ Scraping outer barrier glides car smoothly along track instead of bouncing backward (1.51575ms)
+✔ computeCornerBrakingCue triggers before S do Senna at high speed (0.423958ms)
+✔ Slipstream tow reduces drag and increases straight-line speed behind another car (3.985ms)
+✔ Brake disc temperature rises under heavy braking and trackPitch aligns to slope (0.815292ms)
+✔ Widened Interlagos track maintains clean barrier clearance, expanded kerbs, and valid racing line (59.591292ms)
+✔ computeMotionBlurIntensity scales monotonically with speed and varies by camera perspective (0.277083ms)
+✔ computeKerbParticleSide detects left/right kerb contact above minimum speed (0.211416ms)
+✔ braking downshifts cleanly on a clear straight with a bounded dry/wet stopping envelope (12.561292ms)
+✔ Steering response at 180 km/h achieves >= 80% peak yaw rate within 100ms (0.536541ms)
+✔ 10-car AI pack at 180 Hz avoids capsule penetration and remains moving after 30 seconds (1108.148292ms)
+✔ All selectable circuits (Interlagos, Monza, Spa) are closed, wide, and well-separated (251.377958ms)
+✔ Gamepad mapper applies deadzone, steering curve, triggers, and edge-triggered actions (0.639834ms)
+✔ AI difficulty levels produce distinct race pace (iniciante < competitivo < lendario) (74.823875ms)
+✔ Time Trial mode runs solo flying laps, records personal best, and emits live split delta (489.438625ms)
+✔ Pacejka tire physics models slip saturation, braking axle load transfer, thermal window, and wear (0.548917ms)
+✔ Ghost Car records at 20 Hz, interpolates yaw across PI/-PI wrap, and drives Time Trial replay (0.624ms)
+✔ Spatial 3D rival audio selects closest rivals and applies physical Doppler pitch shift (0.343666ms)
+✔ Selecting any PLAYER_TEAMS preset updates player livery and keeps all 10 grid car numbers unique (1.1365ms)
+✔ 3-circle F1 capsule collision blocks nose-to-tail penetration at 4.5m while keeping 2.1m side-by-side clean (0.343333ms)
+✔ Kerb physics applies asymmetric roll kick and steeper wet kerb grip reduction (0.575333ms)
+✔ Adaptive track sampling keeps step <= 3.0m, generates corner banking camber, and preserves GhostSample speed (2.037875ms)
+✔ F1 Sound Bank generates bounded PCM samples, gearbox ratios, and V6 firing orders (231.194042ms)
+✔ shared materials can replace the apron, preserve road/kerb priority and obey side/wrap boundaries (0.823209ms)
+✔ authored zones require provenance, circuit, valid bounds and non-conflicting intervals (4.194ms)
+✔ recorded audio contacts reuse storage and read the same test map as vehicle physics (8.722ms)
+✔ visual apron cells and sound classify an authored region identically, with unchanged road and walls (958.329125ms)
+✔ 180 Hz clock preserves real time across common and software-rendered frame rates, and bounds stall recovery (1.320334ms)
+✔ race physics at 180 Hz produces identical state with 30 and 144 FPS presentation (237.358958ms)
+✔ braking responds to one side on gravel even when the chassis is over asphalt (0.687792ms)
+ℹ tests 78
+ℹ suites 0
+ℹ pass 78
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4249.566083
